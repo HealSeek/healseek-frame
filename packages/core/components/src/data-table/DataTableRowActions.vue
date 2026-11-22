@@ -2,14 +2,14 @@
 import { Button } from "../controls";
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import type { DataTableRowAction } from "./types";
 import {
   NEW_API_DROPDOWN_CONTENT_CLASS,

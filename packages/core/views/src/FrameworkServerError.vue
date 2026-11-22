@@ -3,7 +3,7 @@
  * FrameworkServerError — 500 page.
  */
 import { useRouter } from 'vue-router'
-import { Button } from '@airovo/uikit-shadcnui'
+import { Button } from '@healseek/uikit-shadcnui'
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'FrameworkServerError' })

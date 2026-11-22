@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { Icon } from '@airovo/shared/icons'
-import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle, TableCell, TableRow } from '@airovo/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle, TableCell, TableRow } from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'DataTableEmpty' })
 

@@ -4,7 +4,7 @@ import {
     AvatarImage,
     AvatarFallback,
     Badge,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 import { computed } from 'vue'
 
 export type UserRole =

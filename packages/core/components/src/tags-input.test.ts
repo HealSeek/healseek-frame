@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { TagsInput, TagsInputInput } from '@airovo/uikit-shadcnui'
+import { TagsInput, TagsInputInput } from '@healseek/uikit-shadcnui'
 
 describe('TagsInput public export', () => {
     it('renders root and input through the public ui-kit entry', () => {

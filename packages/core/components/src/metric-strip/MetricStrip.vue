@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Icon } from '@airovo/shared/icons'
-import { Skeleton } from '@airovo/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { Skeleton } from '@healseek/uikit-shadcnui'
 import type { Metric, MetricTone } from './types'
 
 defineOptions({ name: 'MetricStrip' })

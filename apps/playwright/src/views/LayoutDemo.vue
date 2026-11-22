@@ -6,7 +6,7 @@
  */
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { SectionPage } from '@airovo/components'
+import { SectionPage } from '@healseek/components'
 
 defineOptions({ name: 'LayoutDemo' })
 

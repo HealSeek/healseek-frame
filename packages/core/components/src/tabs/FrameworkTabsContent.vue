@@ -3,7 +3,7 @@ import type { HTMLAttributes } from 'vue'
 import type { TabsContentProps } from 'reka-ui'
 import { reactiveOmit } from '@vueuse/core'
 import { TabsContent } from 'reka-ui'
-import { cn } from '@airovo/uikit-shadcnui'
+import { cn } from '@healseek/uikit-shadcnui'
 
 const props = defineProps<TabsContentProps & { class?: HTMLAttributes['class'] }>()
 const forwarded = reactiveOmit(props, 'class')

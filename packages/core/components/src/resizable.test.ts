@@ -2,7 +2,7 @@
 import { h, nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@airovo/uikit-shadcnui'
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@healseek/uikit-shadcnui'
 
 describe('Resizable primitives', () => {
     it('renders a horizontal group with accessible handle and panel sizes', () => {

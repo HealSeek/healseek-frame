@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Alert, AlertAction, AlertDescription, AlertTitle } from '@airovo/uikit-shadcnui'
+import { Alert, AlertAction, AlertDescription, AlertTitle } from '@healseek/uikit-shadcnui'
 
 describe('Alert public exports', () => {
     it('renders semantic alert content and an action slot', () => {

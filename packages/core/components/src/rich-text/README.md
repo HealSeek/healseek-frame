@@ -5,7 +5,7 @@ Generic HTML-string editor in the core composition layer. It uses Tiptap 3.32.0,
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { RichTextEditor } from "@airovo/components/rich-text";
+import { RichTextEditor } from "@healseek/components/rich-text";
 
 const html = ref("<p>Existing content</p>");
 const session = ref("document-1:open-1");

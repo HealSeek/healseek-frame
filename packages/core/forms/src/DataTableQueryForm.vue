@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, useSlots } from "vue";
-import { Button } from "@airovo/components";
-import type { DataTableRow, UseDataTableReturn } from "@airovo/components";
+import { Button } from "@healseek/components";
+import type { DataTableRow, UseDataTableReturn } from "@healseek/components";
 import type { FormFieldSchema } from "./types";
 import {
   useDataTableQueryForm,

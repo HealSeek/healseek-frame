@@ -2,8 +2,8 @@
 import { Button } from "../controls";
 import { computed, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
-import { useOverlayOwner } from "@airovo/shared/overlay";
+import { Icon } from "@healseek/shared/icons";
+import { useOverlayOwner } from "@healseek/shared/overlay";
 import { FrameworkPaginationEllipsis } from "../pagination";
 import {
   Pagination,
@@ -15,7 +15,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import {
   NEW_API_SELECT_CONTENT_CLASS,
   NEW_API_SELECT_ITEM_CLASS,

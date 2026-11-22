@@ -14,7 +14,7 @@ function makeAuthSurface(overrides: Partial<AuthSurface> = {}): AuthSurface {
     }
 }
 
-describe('@airovo/permission', () => {
+describe('@healseek/permission', () => {
     it('hasRole returns true for held roles and false otherwise', () => {
         setActivePinia(createPinia())
         const store = usePermissionStore()

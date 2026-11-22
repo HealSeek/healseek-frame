@@ -1,4 +1,4 @@
-# @airovo/composables
+# @healseek/composables
 
 The package exposes framework controllers for toast, modal and drawer flows.
 
@@ -12,7 +12,7 @@ DOM scroll lock with Select popups. This prevents one lock from restoring the
 other lock's `hidden` value after the last host closes.
 
 Framework Select controls inherit the nearest host's owner through
-`@airovo/shared/overlay`, including when rendered in external form components.
+`@healseek/shared/overlay`, including when rendered in external form components.
 Their body portal uses a reserved layer above that host's content and below the
 next main backdrop. Opening another host or closing the owner closes its popup;
 it does not raise the popup above every dialog. Reka retains responsibility for

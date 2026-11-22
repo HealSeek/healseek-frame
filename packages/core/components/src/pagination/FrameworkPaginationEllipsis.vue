@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@airovo/uikit-shadcnui'
+import { cn } from '@healseek/uikit-shadcnui'
 
 const props = defineProps<{ class?: HTMLAttributes['class'] }>()
 </script>

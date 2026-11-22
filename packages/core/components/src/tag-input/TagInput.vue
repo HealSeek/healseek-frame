@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, type HTMLAttributes } from 'vue'
 import { X } from '@lucide/vue'
-import { Badge, cn } from '@airovo/uikit-shadcnui'
+import { Badge, cn } from '@healseek/uikit-shadcnui'
 import { Button } from '../controls'
 import type { TagInputProps } from './types'
 

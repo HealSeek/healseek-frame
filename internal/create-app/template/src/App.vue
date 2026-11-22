@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { AppShell } from '@airovo/app'
-import type { SidebarView } from '@airovo/layouts'
+import { AppShell } from '@healseek/app'
+import type { SidebarView } from '@healseek/layouts'
 import { handleReauthenticate, logout } from './auth/handlers'
 
 const sidebarViews = [

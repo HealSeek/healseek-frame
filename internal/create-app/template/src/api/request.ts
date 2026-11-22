@@ -1,8 +1,8 @@
-import { getAppRouter, registerRequestSetup, registerSessionRestore } from '@airovo/app'
-import { toast } from '@airovo/composables'
-import { useAuthStore } from '@airovo/stores/auth'
-import { useI18nStore } from '@airovo/stores/i18n'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { getAppRouter, registerRequestSetup, registerSessionRestore } from '@healseek/app'
+import { toast } from '@healseek/composables'
+import { useAuthStore } from '@healseek/stores/auth'
+import { useI18nStore } from '@healseek/stores/i18n'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 import type { AxiosError, AxiosInstance } from 'axios'
 import { refreshSession, restoreSession } from '../auth/handlers'
 import zh from '../locales/zh-CN/auth.json'
@@ -11,7 +11,7 @@ import { appEnv } from '../config/env'
 import { createAuthRetryHandler, type AppRetryConfig } from './auth-retry'
 import { unwrapAppResponse } from './envelope'
 
-export type AppRequestClient = ReturnType<typeof import('@airovo/app').getRequestClient>
+export type AppRequestClient = ReturnType<typeof import('@healseek/app').getRequestClient>
 
 type RetriableConfig = AppRetryConfig
 

@@ -9,7 +9,7 @@ import {
     EmptyHeader,
     EmptyMedia,
     EmptyTitle,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 describe('Empty primitive exports', () => {
     it('renders the complete slot composition and icon variant', () => {

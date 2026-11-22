@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { Register as FrameworkRegister } from '@airovo/views'
+import { Register as FrameworkRegister } from '@healseek/views'
 import { handleRegister } from '../../auth/handlers'
 import type { RegisterParams } from '../../auth/contract'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 
 defineOptions({ name: 'AppRegister' })
 

@@ -28,7 +28,7 @@ export interface ViteConfig extends UserConfig {
     };
 }
 
-const APP_CONFIG_GLOBAL = '_AIROVO_APP_CONF_'
+const APP_CONFIG_GLOBAL = '_HEALSEEK_APP_CONF_'
 
 /**
  * Mirrors vben-admin's extra-app-config plugin.
@@ -42,7 +42,7 @@ function appConfigPlugin(): Plugin {
     let source = `${APP_CONFIG_GLOBAL}={};`
 
     return {
-        name: 'airovo:extra-app-config',
+        name: 'healseek:extra-app-config',
         apply: 'build',
         configResolved(config) {
             configBase = config.base.endsWith('/') ? config.base : `${config.base}/`
@@ -81,7 +81,7 @@ function appConfigPlugin(): Plugin {
  * @example
  * ```ts
  * // apps/xxx/vite.config.ts — 最简用法
- * import { defineViteConfig } from '@airovo/vite-config';
+ * import { defineViteConfig } from '@healseek/vite-config';
  * export default defineViteConfig();
  *
  * // 自定义覆盖
@@ -163,23 +163,23 @@ export const defineViteConfig = (config: ViteConfig = {}): UserConfig => {
         'zod',
     ]
     const frameworkOptimizeDepsExclude = [
-        '@airovo/config',
-        '@airovo/layouts',
-        '@airovo/components',
-        '@airovo/router',
-        '@airovo/stores',
-        '@airovo/uikit-shadcnui',
-        '@airovo/forms',
-        '@airovo/views',
-        '@airovo/app',
-        '@airovo/app-ui',
-        '@airovo/composables',
-        '@airovo/request',
-        '@airovo/request/internal',
-        '@airovo/permission',
-        '@airovo/tabs',
-        '@airovo/shared',
-        '@airovo/router/internal',
+        '@healseek/config',
+        '@healseek/layouts',
+        '@healseek/components',
+        '@healseek/router',
+        '@healseek/stores',
+        '@healseek/uikit-shadcnui',
+        '@healseek/forms',
+        '@healseek/views',
+        '@healseek/app',
+        '@healseek/app-ui',
+        '@healseek/composables',
+        '@healseek/request',
+        '@healseek/request/internal',
+        '@healseek/permission',
+        '@healseek/tabs',
+        '@healseek/shared',
+        '@healseek/router/internal',
     ]
 
     return {
@@ -187,18 +187,18 @@ export const defineViteConfig = (config: ViteConfig = {}): UserConfig => {
             alias: {
                 '#': resolve(process.cwd(), 'src'),
                 '@': resolve(__dirname, '../../../packages/ui-kit/shadcn-vue/src'),
-                // `@airovo/shared` exposes subpath-only exports (icons/utils).
+                // `@healseek/shared` exposes subpath-only exports (icons/utils).
                 // Pin it to the workspace source so Vite can resolve those
                 // subpaths even when a pnpm symlink has not been prebundled.
-                '@airovo/shared/icons': resolve(__dirname, '../../../packages/shared/src/icons/index.ts'),
-                '@airovo/shared/utils': resolve(__dirname, '../../../packages/shared/src/utils/index.ts'),
-                '@airovo/shared': resolve(__dirname, '../../../packages/shared/src'),
-                // Framework internals are imported by @airovo/app itself.
+                '@healseek/shared/icons': resolve(__dirname, '../../../packages/shared/src/icons/index.ts'),
+                '@healseek/shared/utils': resolve(__dirname, '../../../packages/shared/src/utils/index.ts'),
+                '@healseek/shared': resolve(__dirname, '../../../packages/shared/src'),
+                // Framework internals are imported by @healseek/app itself.
                 // Resolve them to workspace source explicitly so a stale or
                 // partially linked pnpm workspace cannot leave a dev server
                 // with a 500 while resolving the subpath exports.
-                '@airovo/router/internal': resolve(__dirname, '../../../packages/core/router/src/internal.ts'),
-                '@airovo/request/internal': resolve(__dirname, '../../../packages/core/request/src/internal.ts'),
+                '@healseek/router/internal': resolve(__dirname, '../../../packages/core/router/src/internal.ts'),
+                '@healseek/request/internal': resolve(__dirname, '../../../packages/core/request/src/internal.ts'),
                 ...(appResolve?.alias as Record<string, string>),
             },
             ...appResolve,

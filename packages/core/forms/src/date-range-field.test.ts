@@ -3,7 +3,7 @@ import { flushPromises, mount, type VueWrapper } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { defineComponent, h, markRaw, type PropType } from 'vue'
 import { createI18n } from 'vue-i18n'
-import { DateTimeRangePicker, Input } from '@airovo/components'
+import { DateTimeRangePicker, Input } from '@healseek/components'
 import { z } from 'zod'
 import { useForm, type FormApi, type FormFieldSchema } from './index'
 

@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Progress } from '@airovo/uikit-shadcnui'
+import { Progress } from '@healseek/uikit-shadcnui'
 
 describe('Progress primitive export', () => {
     it('renders value and accessibility attributes through the public ui-kit export', () => {

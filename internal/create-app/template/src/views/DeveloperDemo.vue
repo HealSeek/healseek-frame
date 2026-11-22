@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ServiceHealthCard } from '@airovo/app-ui'
-import { useModal, useToast } from '@airovo/composables'
-import { useForm, type FormFieldSchema } from '@airovo/forms'
-import { SectionPage, StatCard, StatusBadge } from '@airovo/components'
-import { PermissionButton } from '@airovo/permission'
-import { Button } from '@airovo/uikit-shadcnui'
-import { useAuthStore } from '@airovo/stores/auth'
-import { useRequest } from '@airovo/request'
+import { ServiceHealthCard } from '@healseek/app-ui'
+import { useModal, useToast } from '@healseek/composables'
+import { useForm, type FormFieldSchema } from '@healseek/forms'
+import { SectionPage, StatCard, StatusBadge } from '@healseek/components'
+import { PermissionButton } from '@healseek/permission'
+import { Button } from '@healseek/uikit-shadcnui'
+import { useAuthStore } from '@healseek/stores/auth'
+import { useRequest } from '@healseek/request'
 import { createDemoApi } from '../api/demo'
 
 defineOptions({ name: 'DeveloperDemo' })

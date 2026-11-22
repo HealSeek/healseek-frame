@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Toggle } from '@airovo/uikit-shadcnui'
+import { Toggle } from '@healseek/uikit-shadcnui'
 
 describe('Toggle public export', () => {
     it('renders controlled pressed state and variant classes', () => {

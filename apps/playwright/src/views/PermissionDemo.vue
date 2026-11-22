@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useFrameworkApp } from '@airovo/app'
-import { PermissionButton, usePermissionStore } from '@airovo/permission'
-import { useAuthStore } from '@airovo/stores/auth'
-import { SectionPage } from '@airovo/components'
+import { useFrameworkApp } from '@healseek/app'
+import { PermissionButton, usePermissionStore } from '@healseek/permission'
+import { useAuthStore } from '@healseek/stores/auth'
+import { SectionPage } from '@healseek/components'
 import {
     Badge,
     Button,
     NativeSelect,
     NativeSelectOption,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'PermissionDemo' })
 

@@ -1,5 +1,5 @@
 import { computed, onBeforeUnmount, ref, watch, type Component, type ComputedRef, type Ref } from 'vue'
-import type { DataTableRow, UseDataTableReturn } from '@airovo/components'
+import type { DataTableRow, UseDataTableReturn } from '@healseek/components'
 import { useAForm, type UseFormOptions } from './useAForm'
 import type { FormApi } from './form-api'
 import type { FormFieldSchema } from './types'

@@ -1,5 +1,5 @@
-import type { TabItem } from "@airovo/stores/tabs";
-import { useTabStore } from "@airovo/stores/tabs";
+import type { TabItem } from "@healseek/stores/tabs";
+import { useTabStore } from "@healseek/stores/tabs";
 import { useRouter } from "vue-router";
 
 export interface TabAction {

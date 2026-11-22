@@ -1,12 +1,12 @@
 {
-  "extends": "@airovo/typescript-config/base.json",
+  "extends": "@healseek/typescript-config/base.json",
   "include": ["."],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "strictNullChecks": true,
     "paths": {
-      "@airovo/uikit-shadcnui": ["./src/index.ts"],
-      "@airovo/uikit-shadcnui/*": ["./src/*"],
+      "@healseek/uikit-shadcnui": ["./src/index.ts"],
+      "@healseek/uikit-shadcnui/*": ["./src/*"],
       "@/*": ["./src/*"]
     }
   }

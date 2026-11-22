@@ -10,7 +10,7 @@
         "typecheck": "tsc --noEmit"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@types/node": "catalog:",
         "nitropack": "^2.12.8",
         "typescript": "catalog:"

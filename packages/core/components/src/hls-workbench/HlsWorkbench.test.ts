@@ -1,7 +1,7 @@
 import { DOMWrapper, flushPromises, mount } from "@vue/test-utils";
 import { defineComponent, h, ref } from "vue";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { provideOverlayOwner } from "@airovo/shared/overlay";
+import { provideOverlayOwner } from "@healseek/shared/overlay";
 import HlsWorkbench from "./HlsWorkbench.vue";
 
 const seek = vi.fn();

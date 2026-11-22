@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { SidebarInset, SidebarProvider } from '@airovo/uikit-shadcnui'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { SidebarInset, SidebarProvider } from '@healseek/uikit-shadcnui'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 import BasicHeader from '../header/header.vue'
 import BasicSidebar from '../sidebar/sidebar.vue'
 import type { SidebarMenuItemType } from '../sidebar/types'

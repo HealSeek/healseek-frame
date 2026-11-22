@@ -32,9 +32,9 @@ for (const name of [
 }
 
 const component = await source('src/components/service-health-card/ServiceHealthCard.vue')
-assert.match(component, /from ['"]@airovo\/components['"]/)
+assert.match(component, /from ['"]@healseek\/components['"]/)
 assert.doesNotMatch(component, /packages\/core\//)
-assert.doesNotMatch(component, /@airovo\/layouts\/src\//)
+assert.doesNotMatch(component, /@healseek\/layouts\/src\//)
 assert.match(component, /StatusBadge/)
 
 for (const path of [

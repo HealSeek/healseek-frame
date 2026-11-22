@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { useRequest } from '@airovo/request'
-import { SectionPage } from '@airovo/components'
-import { Badge, Button } from '@airovo/uikit-shadcnui'
+import { useRequest } from '@healseek/request'
+import { SectionPage } from '@healseek/components'
+import { Badge, Button } from '@healseek/uikit-shadcnui'
 import { createDemoApi, type HealthStatus } from '../api/demo'
 
 defineOptions({ name: 'MockHealthDemo' })

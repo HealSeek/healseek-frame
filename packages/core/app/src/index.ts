@@ -20,7 +20,7 @@ export type { AppLocaleRegistration } from './localeRegistry'
 export { useAppContext, type AppContext } from './context'
 
 // Re-export commonly used framework APIs
-export { getAppRouter, registerAppRouter } from '@airovo/router'
-export { getRequestClient, registerRequestSetup, registerSessionRestore } from '@airovo/request'
-export { useAuthStore } from '@airovo/stores/auth'
-export { usePreferencesStore } from '@airovo/stores/preferences'
+export { getAppRouter, registerAppRouter } from '@healseek/router'
+export { getRequestClient, registerRequestSetup, registerSessionRestore } from '@healseek/request'
+export { useAuthStore } from '@healseek/stores/auth'
+export { usePreferencesStore } from '@healseek/stores/preferences'

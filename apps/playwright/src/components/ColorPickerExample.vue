@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { Button, ColorPicker } from "@airovo/components";
-import { useModal } from "@airovo/composables";
-import { useForm } from "@airovo/forms";
+import { Button, ColorPicker } from "@healseek/components";
+import { useModal } from "@healseek/composables";
+import { useForm } from "@healseek/forms";
 
 const theme = ref("#c2410c");
 const translucent = ref("#3b82f680");

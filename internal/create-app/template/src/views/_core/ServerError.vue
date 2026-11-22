@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FrameworkServerError } from '@airovo/views'
+import { FrameworkServerError } from '@healseek/views'
 
 defineOptions({ name: 'AppServerError' })
 </script>

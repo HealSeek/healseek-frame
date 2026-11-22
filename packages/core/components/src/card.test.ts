@@ -10,7 +10,7 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 describe('Card public exports', () => {
     it('renders the complete card slot structure and small size', () => {

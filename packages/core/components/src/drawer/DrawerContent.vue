@@ -3,7 +3,7 @@ import type { DialogContentEmits, DialogContentProps } from "reka-ui";
 import type { HTMLAttributes } from "vue";
 import { reactiveOmit } from "@vueuse/core";
 import { DialogContent, DialogPortal, useForwardPropsEmits } from "reka-ui";
-import { cn } from "@airovo/uikit-shadcnui";
+import { cn } from "@healseek/uikit-shadcnui";
 import DrawerOverlay from "./DrawerOverlay.vue";
 
 defineOptions({ inheritAttrs: false });

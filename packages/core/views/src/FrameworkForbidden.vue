@@ -5,7 +5,7 @@
  * /403 route in their coreRoutes to point at this view.
  */
 import { useRouter } from 'vue-router'
-import { Button } from '@airovo/uikit-shadcnui'
+import { Button } from '@healseek/uikit-shadcnui'
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'FrameworkForbidden' })

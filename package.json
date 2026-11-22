@@ -6,7 +6,8 @@
   },
   "scripts": {
     "preinstall": "node scripts/check-pnpm-version.mjs",
-    "create:app": "pnpm --filter @airovo/create-app build && node internal/create-app/dist/index.js",
+    "test:branding": "node --test scripts/branding.test.mjs",
+    "create:app": "pnpm --filter @healseek/create-app build && node internal/create-app/dist/index.js",
     "build": "turbo run build",
     "dev": "node scripts/dev.mjs",
     "dev:all": "node scripts/dev.mjs --all",
@@ -29,5 +30,5 @@
     "turbo": "^2.9.14"
   },
   "packageManager": "pnpm@9.15.4",
-  "name": "with-vite"
+  "name": "healseek-frame"
 }

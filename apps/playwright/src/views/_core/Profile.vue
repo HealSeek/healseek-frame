@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Profile as FrameworkProfile } from '@airovo/views'
-import { useAuthStore } from '@airovo/stores/auth'
+import { Profile as FrameworkProfile } from '@healseek/views'
+import { useAuthStore } from '@healseek/stores/auth'
 import { logout } from '../../auth/handlers'
 
 defineOptions({ name: 'AppProfile' })

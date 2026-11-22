@@ -9,19 +9,19 @@ import {
   watch,
 } from "vue";
 import { Icon } from "@iconify/vue";
-import { useTabStore, type TabItem } from "@airovo/stores/tabs";
-import { FrameworkTooltip } from "@airovo/components/overlay";
+import { useTabStore, type TabItem } from "@healseek/stores/tabs";
+import { FrameworkTooltip } from "@healseek/components/overlay";
 import {
   ContextMenu,
   ContextMenuContent,
   ContextMenuTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/context-menu";
+} from "@healseek/uikit-shadcnui/components/ui/context-menu";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/dropdown-menu";
+} from "@healseek/uikit-shadcnui/components/ui/dropdown-menu";
 import TabActionItems from "./TabActionItems.vue";
 import { useTabActions } from "./tab-actions";
 

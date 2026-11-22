@@ -1,2 +1,2 @@
-export type { MenuItem as SidebarMenuItemType } from '@airovo/router'
+export type { MenuItem as SidebarMenuItemType } from '@healseek/router'
 export type { SidebarView, SidebarViewParent } from './sidebarViews'

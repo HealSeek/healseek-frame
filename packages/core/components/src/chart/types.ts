@@ -1,4 +1,4 @@
-import type { ChartConfig, ChartSeriesConfigMap } from '@airovo/uikit-shadcnui'
+import type { ChartConfig, ChartSeriesConfigMap } from '@healseek/uikit-shadcnui'
 
 export type FrameworkChartType = 'line' | 'bar' | 'pie' | 'doughnut' | 'radar'
 // Chart.js treats null as a gap; callers must not replace missing observations with zero.

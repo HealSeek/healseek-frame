@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Spinner } from '@airovo/uikit-shadcnui'
+import { Spinner } from '@healseek/uikit-shadcnui'
 
 describe('Spinner public export', () => {
     it('renders status semantics and the default loading animation', () => {

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useSidebar, SidebarTrigger } from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
+import { useSidebar, SidebarTrigger } from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
 import type { SidebarMenuItemType } from '../sidebar/types'
 
 import UserDropDown from '../components/UserDropDown/index.vue'

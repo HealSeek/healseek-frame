@@ -3,7 +3,7 @@ import { createApp, defineComponent, nextTick } from 'vue'
 import { createPinia, setActivePinia } from 'pinia'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import type { RouteLocationNormalized } from 'vue-router'
-import { useTabStore } from '@airovo/stores/tabs'
+import { useTabStore } from '@healseek/stores/tabs'
 import { installTabs } from '../src/index'
 
 function makeRoute(
@@ -25,7 +25,7 @@ function makeRoute(
     } as unknown as RouteLocationNormalized
 }
 
-describe('@airovo/tabs', () => {
+describe('@healseek/tabs', () => {
     beforeEach(() => setActivePinia(createPinia()))
 
     it('addOrActivate creates a new tab for an unseen route', () => {

@@ -6,7 +6,7 @@ import {
   type ApiSelectContext,
   type ApiSelectPage,
   type SelectOption,
-} from "@airovo/components";
+} from "@healseek/components";
 
 const localValue = ref<string>();
 const remoteValue = ref<string>();

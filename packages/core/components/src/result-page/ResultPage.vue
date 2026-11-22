@@ -2,7 +2,7 @@
 import { Button } from "../controls";
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 
 import { RESULT_PRESET, type ResultStatus } from "./types";
 

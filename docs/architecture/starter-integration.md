@@ -13,7 +13,7 @@ import './locales'
 
 import App from './App.vue'
 import preferences from './preferences'
-import { createApp } from '@airovo/app'
+import { createApp } from '@healseek/app'
 
 const { mount } = await createApp({ root: App, preferences })
 mount('#app')
@@ -69,7 +69,7 @@ registerAppRouter({
 ### 页面和 app-ui
 
 登录、注册、个人资料和错误页在 `src/views/_core/` 保留应用级文件，默认引用
-`@airovo/views`，需要自定义时直接编辑应用文件。业务页面放在 `src/views/`；业务组合
+`@healseek/views`，需要自定义时直接编辑应用文件。业务页面放在 `src/views/`；业务组合
 组件放在 `app-ui/`。`packages/core/components`、`layouts`、`forms`、`composables`
 提供框架级能力，不能把这些内置组件复制回 `app-ui`。
 
@@ -78,7 +78,7 @@ registerAppRouter({
 ```bash
 pnpm dev <name> --mock         # 同时启动应用和 127.0.0.1:4174 的 Mock API
 pnpm --filter <name> exec vue-tsc --noEmit
-pnpm --filter @airovo/app test
+pnpm --filter @healseek/app test
 ```
 
 模板默认可演示登录、注册错误、401 refresh、硬刷新恢复、动态菜单、权限过滤、403、

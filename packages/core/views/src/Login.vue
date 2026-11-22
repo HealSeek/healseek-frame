@@ -2,8 +2,8 @@
 import { computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Icon } from '@iconify/vue'
-import { useForm, type FormFieldSchema } from '@airovo/forms'
-import { Button } from '@airovo/uikit-shadcnui'
+import { useForm, type FormFieldSchema } from '@healseek/forms'
+import { Button } from '@healseek/uikit-shadcnui'
 import { z } from 'zod'
 import type { LoginValues } from './auth-types'
 

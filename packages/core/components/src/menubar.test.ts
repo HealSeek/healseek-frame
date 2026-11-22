@@ -11,7 +11,7 @@ import {
     MenubarSeparator,
     MenubarShortcut,
     MenubarTrigger,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 describe('Menubar public exports', () => {
     it('renders a menu trigger and content with menu semantics', async () => {

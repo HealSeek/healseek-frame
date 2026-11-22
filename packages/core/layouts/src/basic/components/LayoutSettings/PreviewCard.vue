@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@airovo/shared/icons'
+import { Icon } from '@healseek/shared/icons'
 defineProps<{ selected?: boolean }>()
 </script>
 <template>

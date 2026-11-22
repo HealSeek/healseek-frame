@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FrameworkForbidden } from '@airovo/views'
+import { FrameworkForbidden } from '@healseek/views'
 
 defineOptions({ name: 'AppForbidden' })
 </script>

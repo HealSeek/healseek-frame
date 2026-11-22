@@ -2,7 +2,7 @@
 /**
  * FrameworkNetworkError — shown when the network is down.
  */
-import { Button } from '@airovo/uikit-shadcnui'
+import { Button } from '@healseek/uikit-shadcnui'
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'FrameworkNetworkError' })

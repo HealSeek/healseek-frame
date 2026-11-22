@@ -4,7 +4,7 @@
 
 ## new-api UI
 
-| new-api 源码 | 读取到的行为 | airovo-frame 落点 |
+| new-api 源码 | 读取到的行为 | HealSeek Frame 落点 |
 |---|---|---|
 | `web/src/components/layout/components/authenticated-layout.tsx` | 认证壳层组合 Header、SidebarProvider、SidebarInset；内容区作为独立 inset 工作区 | `packages/core/layouts/src/basic/layout.vue`、`LayoutHost.vue` |
 | `web/src/components/layout/components/header.tsx`、`app-header.tsx` | Header 与侧栏共享壳层，工具区承载搜索、语言、通知、主题/设置和用户操作 | `packages/core/layouts/src/basic/header/header.vue` 与 `basic/components/*`；业务导航交由 `business` 插槽 |
@@ -28,7 +28,7 @@
 
 ## vue-vben-admin 工程
 
-| vben 源码 | 读取到的行为 | airovo-frame 落点 |
+| vben 源码 | 读取到的行为 | HealSeek Frame 落点 |
 |---|---|---|
 | `packages/@core/preferences/src/preferences.ts`、`use-preferences.ts`、`update-css-variables.ts` | 偏好集中管理，状态变化同步 CSS token | `packages/core/config/src/preferences/manager.ts`、`packages/core/stores/src/preferences/index.ts` |
 | `packages/locales/src/i18n.ts`、`apps/web-antd/src/locales/index.ts` | 框架消息先装载，应用语言包按需合并，切换同步 HTML lang | `packages/core/layouts/src/i18n.ts`、`packages/core/stores/src/i18n/index.ts`、`packages/core/app/src/createApp.ts` |

@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { InputOTP, InputOTPGroup, InputOTPSlot } from '@airovo/uikit-shadcnui'
+import { InputOTP, InputOTPGroup, InputOTPSlot } from '@healseek/uikit-shadcnui'
 
 describe('InputOTP public export', () => {
     it('renders the OTP group and slot through the public entry', () => {

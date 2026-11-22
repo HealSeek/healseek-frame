@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, type PropType } from 'vue'
-import { Icon } from '@airovo/shared/icons'
+import { Icon } from '@healseek/shared/icons'
 import {
     STATUS_DOT_COLOR,
     STATUS_PRESET_LABEL,

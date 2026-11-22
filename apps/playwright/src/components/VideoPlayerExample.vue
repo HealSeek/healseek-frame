@@ -5,7 +5,7 @@ import {
   Input,
   VideoPlayer,
   type VideoPlayerOptions,
-} from "@airovo/components";
+} from "@healseek/components";
 
 const mediaUrl = ref("");
 const subtitleUrl = ref("");

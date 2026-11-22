@@ -14,7 +14,7 @@ import type { StatusBadgeType } from './types'
  * A computed ref is used so callers can switch the visual type reactively.
  */
 export const STATUS_BADGE_TYPE_KEY: InjectionKey<ComputedRef<StatusBadgeType>> =
-    Symbol('airovo.status-badge.type')
+    Symbol('healseek.status-badge.type')
 
 export function provideStatusBadgeType(type: MaybeRefOrGetter<StatusBadgeType>): void {
     provide(STATUS_BADGE_TYPE_KEY, computed(() => toValue(type)))

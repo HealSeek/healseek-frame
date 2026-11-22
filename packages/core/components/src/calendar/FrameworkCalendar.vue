@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { CalendarRootProps, DateValue } from 'reka-ui'
-import { Calendar } from '@airovo/uikit-shadcnui/components/ui/calendar'
+import { Calendar } from '@healseek/uikit-shadcnui/components/ui/calendar'
 import { computed, useAttrs } from 'vue'
 
 defineOptions({ name: 'FrameworkCalendar', inheritAttrs: false })

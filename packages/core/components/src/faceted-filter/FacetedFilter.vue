@@ -5,9 +5,9 @@ import { Check, PlusCircle, Search } from "@lucide/vue";
 import { computed, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { ListboxFilter, useFilter } from "reka-ui";
-import { cn } from "@airovo/uikit-shadcnui";
-import { useOverlayOwner } from "@airovo/shared/overlay";
-import { Badge } from "@airovo/uikit-shadcnui/components/ui/badge";
+import { cn } from "@healseek/uikit-shadcnui";
+import { useOverlayOwner } from "@healseek/shared/overlay";
+import { Badge } from "@healseek/uikit-shadcnui/components/ui/badge";
 
 import {
   Command,
@@ -15,17 +15,17 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@airovo/uikit-shadcnui/components/ui/command";
+} from "@healseek/uikit-shadcnui/components/ui/command";
 import {
   InputGroup,
   InputGroupAddon,
-} from "@airovo/uikit-shadcnui/components/ui/input-group";
+} from "@healseek/uikit-shadcnui/components/ui/input-group";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
-import { Separator } from "@airovo/uikit-shadcnui/components/ui/separator";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
+import { Separator } from "@healseek/uikit-shadcnui/components/ui/separator";
 import {
   NEW_API_COMMAND_CLASS,
   NEW_API_COMMAND_INPUT_CLASS,

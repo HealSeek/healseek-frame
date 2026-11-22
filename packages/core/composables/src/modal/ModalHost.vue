@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, shallowRef, watch } from "vue";
-import { Button } from "@airovo/components/controls";
-import { cn } from "@airovo/uikit-shadcnui";
-import { Icon } from "@airovo/shared/icons";
-import { provideOverlayOwner } from "@airovo/shared/overlay";
+import { Button } from "@healseek/components/controls";
+import { cn } from "@healseek/uikit-shadcnui";
+import { Icon } from "@healseek/shared/icons";
+import { provideOverlayOwner } from "@healseek/shared/overlay";
 import {
   DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import {
   DialogContent,
   DialogOverlay,

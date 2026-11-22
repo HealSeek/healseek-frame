@@ -1,5 +1,5 @@
 /**
- * @airovo/tabs — vben-style multi-tab system.
+ * @healseek/tabs — vben-style multi-tab system.
  *
  * Exports:
  *   - BasicTabBar          — the strip component (slot it into your layout)
@@ -7,18 +7,18 @@
  *   - installTabs(app, { router, defaultTabPath? })
  *
  * The tab state itself (`useTabStore`, `TabItem`) lives in
- * `@airovo/stores/tabs` — every framework store is centralised there
+ * `@healseek/stores/tabs` — every framework store is centralised there
  * to keep the import surface predictable. This package only owns the
  * UI + the router wiring.
  */
 import { computed } from 'vue'
 import type { App } from 'vue'
 import type { RouteLocationNormalized, Router } from 'vue-router'
-import { setTabStorageKey, useTabStore } from '@airovo/stores/tabs'
+import { setTabStorageKey, useTabStore } from '@healseek/stores/tabs'
 import BasicTabBar from './components/BasicTabBar.vue'
 
-export { useTabStore } from '@airovo/stores/tabs'
-export type { TabItem } from '@airovo/stores/tabs'
+export { useTabStore } from '@healseek/stores/tabs'
+export type { TabItem } from '@healseek/stores/tabs'
 export { BasicTabBar }
 
 export function useCachedTabNames() {

@@ -2,7 +2,7 @@
 import { Button } from "../controls";
 import { computed, onBeforeUnmount, ref, useId, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import {
   Badge,
   Separator,
@@ -10,7 +10,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 
 defineOptions({ name: "DataTableBulkActions" });
 

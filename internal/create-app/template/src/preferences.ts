@@ -1,4 +1,4 @@
-import { definePreferences } from '@airovo/config/preferences'
+import { definePreferences } from '@healseek/config/preferences'
 import { appEnv } from './config/env'
 
 const appPreferences = definePreferences({

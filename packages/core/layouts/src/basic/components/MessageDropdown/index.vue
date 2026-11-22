@@ -8,9 +8,9 @@ import {
     DropdownMenuSeparator,
     Button,
     Badge,
-} from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
-import { useNotificationStore } from '@airovo/stores'
+} from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { useNotificationStore } from '@healseek/stores'
 
 defineOptions({ name: 'MessageDropdown' })
 

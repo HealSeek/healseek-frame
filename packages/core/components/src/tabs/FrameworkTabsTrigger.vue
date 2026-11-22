@@ -3,7 +3,7 @@ import type { HTMLAttributes } from 'vue'
 import type { TabsTriggerProps } from 'reka-ui'
 import { reactiveOmit } from '@vueuse/core'
 import { TabsTrigger } from 'reka-ui'
-import { cn } from '@airovo/uikit-shadcnui'
+import { cn } from '@healseek/uikit-shadcnui'
 
 const props = defineProps<TabsTriggerProps & { class?: HTMLAttributes['class'] }>()
 const forwarded = reactiveOmit(props, 'class')

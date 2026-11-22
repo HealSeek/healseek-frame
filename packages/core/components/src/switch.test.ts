@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Switch } from '@airovo/uikit-shadcnui'
+import { Switch } from '@healseek/uikit-shadcnui'
 
 describe('Switch public export', () => {
     it('renders switch semantics and disabled state', () => {

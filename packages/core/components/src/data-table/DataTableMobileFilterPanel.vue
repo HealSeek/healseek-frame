@@ -9,7 +9,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 
 defineOptions({ name: "DataTableMobileFilterPanel" });
 

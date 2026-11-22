@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { ButtonGroup, ButtonGroupSeparator, ButtonGroupText } from '@airovo/uikit-shadcnui'
+import { ButtonGroup, ButtonGroupSeparator, ButtonGroupText } from '@healseek/uikit-shadcnui'
 
 describe('ButtonGroup public exports', () => {
     it('renders group semantics, text slot and separator', () => {

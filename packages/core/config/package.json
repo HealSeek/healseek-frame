@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/config",
+    "name": "@healseek/config",
     "version": "0.0.0",
     "exports": {
         ".": "./src/index.ts",
@@ -10,11 +10,11 @@
         "lint": "eslint \"**/*.ts\""
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "typescript": "~6.0.2"
     },
     "dependencies": {
-        "@airovo/router": "workspace:*",
+        "@healseek/router": "workspace:*",
         "pinia": "catalog:",
         "vue": "catalog:"
     }

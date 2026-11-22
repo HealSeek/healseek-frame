@@ -9,7 +9,7 @@
  */
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 import BasicLayout from './layout.vue'
 import BasicLayoutMix from './layouts/mix.vue'
 import BasicLayoutFullContent from './layouts/full-content.vue'

@@ -3,7 +3,7 @@ import { Input, Button } from "../controls";
 import { X } from "@lucide/vue";
 import { computed, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { cn } from "@airovo/uikit-shadcnui";
+import { cn } from "@healseek/uikit-shadcnui";
 
 import DatePicker from "./DatePicker.vue";
 

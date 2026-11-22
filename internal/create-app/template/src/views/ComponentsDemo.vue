@@ -46,9 +46,9 @@ import {
     type DataTableFetcher,
     type DataTableQuery,
     type DataTableQueryState,
-} from '@airovo/components'
+} from '@healseek/components'
 
-import { PermissionButton } from '@airovo/permission'
+import { PermissionButton } from '@healseek/permission'
 import {
     Badge,
     Alert,
@@ -146,12 +146,12 @@ import {
     TabsContent,
     TabsList,
     TabsTrigger,
-} from '@airovo/uikit-shadcnui'
-import { Combobox, MultiSelect, SelectBox, SearchSelect } from '@airovo/components'
-import { DataTableQueryPage, type QueryFormValues, type FormFieldSchema } from '@airovo/forms'
-import { useDrawer, useModal } from '@airovo/composables'
-import { useEventSourceSession, type EventSourceProtocolEventPayload } from '@airovo/request'
-import { ServiceHealthCard } from '@airovo/app-ui'
+} from '@healseek/uikit-shadcnui'
+import { Combobox, MultiSelect, SelectBox, SearchSelect } from '@healseek/components'
+import { DataTableQueryPage, type QueryFormValues, type FormFieldSchema } from '@healseek/forms'
+import { useDrawer, useModal } from '@healseek/composables'
+import { useEventSourceSession, type EventSourceProtocolEventPayload } from '@healseek/request'
+import { ServiceHealthCard } from '@healseek/app-ui'
 import OverlaySelectExample from './_examples/OverlaySelectExample.vue'
 import OverlayDatePickerExample from './_examples/OverlayDatePickerExample.vue'
 import { getDemoEventsUrl } from '../api/core/events'
@@ -521,7 +521,7 @@ function sseItemData(item: unknown): unknown {
         >
         <template #title>框架组件库演示</template>
         <template #description
-            >@airovo/components
+            >@healseek/components
             提供的通用后台组件；页面骨架和基础交互由框架包提供。</template
         >
         <div class="space-y-8">

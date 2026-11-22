@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { Icon } from '@airovo/shared/icons'
-import { Skeleton } from '@airovo/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { Skeleton } from '@healseek/uikit-shadcnui'
 
 export type StatTrendDirection = 'up' | 'down' | 'flat'
 export interface StatTrend {

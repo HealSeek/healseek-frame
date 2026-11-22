@@ -9,7 +9,7 @@ import {
   watch,
 } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 
 import { toast } from "vue-sonner";
 import {

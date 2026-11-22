@@ -1,4 +1,4 @@
-import type { MenusMod } from '@airovo/router'
+import type { MenusMod } from '@healseek/router'
 
 export type { MenusMod }
 export type ThemeMode = 'light' | 'dark' | 'system'

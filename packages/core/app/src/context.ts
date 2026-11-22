@@ -1,5 +1,5 @@
 import { inject, type Ref } from 'vue'
-import type { MenuItem } from '@airovo/router'
+import type { MenuItem } from '@healseek/router'
 
 /**
  * App context key for dependency injection.

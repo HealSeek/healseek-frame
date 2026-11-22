@@ -76,6 +76,6 @@ Schema conditions and component props can be functions receiving
 controls and framework compositions, including SelectBox.
 
 Focused tests are in `packages/core/forms/src/*.test.ts`. Run
-`pnpm --filter @airovo/forms test` for behavior and
+`pnpm --filter @healseek/forms test` for behavior and
 `pnpm --filter playwright exec vue-tsc --noEmit` for the source-consumed
 cross-package type contract.

@@ -4,7 +4,7 @@ import { createPinia, setActivePinia } from 'pinia'
 import {
     PreferenceManager,
     definePreferencesExtension,
-} from '@airovo/config/preferences'
+} from '@healseek/config/preferences'
 import { usePreferencesStore } from './index'
 
 const extension = definePreferencesExtension<{

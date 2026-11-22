@@ -2,13 +2,13 @@
 import { Button } from "../controls";
 import { computed, type HTMLAttributes } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import { DATA_TABLE_VIEW_MODES, type DataTableViewMode } from "./view-mode";
 
 defineOptions({ name: "DataTableViewModeToggle" });

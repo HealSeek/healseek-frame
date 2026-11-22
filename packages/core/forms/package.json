@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/forms",
+    "name": "@healseek/forms",
     "version": "0.0.0",
     "exports": {
         ".": "./src/index.ts"
@@ -10,8 +10,8 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@airovo/components": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/components": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "@iconify/vue": "catalog:",
         "@vee-validate/zod": "^4.15.0",
         "pinia": "catalog:",

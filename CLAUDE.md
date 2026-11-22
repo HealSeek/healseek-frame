@@ -14,9 +14,9 @@ The public overview is in README.md; this file records implementation boundaries
   retain Turbo's dependency builds. `pnpm dev --list` lists runnable apps.
 - `pnpm --filter playwright exec vue-tsc --noEmit` typechecks the demo and the
   source-consumed framework packages.
-- `pnpm --filter @airovo/<package> test` runs a package's Vitest suite.
+- `pnpm --filter @healseek/<package> test` runs a package's Vitest suite.
 - `pnpm lint` runs package lint tasks; `pnpm build` runs the dependency-ordered
-  build. Rebuild `@airovo/vite-config` after changing its source because apps
+  build. Rebuild `@healseek/vite-config` after changing its source because apps
   consume its dist output.
 - `pnpm create:app <name>` builds the local CLI and scaffolds an app.
 
@@ -52,7 +52,7 @@ import './locales'
 
 import App from './App.vue'
 import preferences from './preferences'
-import { createApp } from '@airovo/app'
+import { createApp } from '@healseek/app'
 
 const { mount } = await createApp({ root: App, preferences })
 mount('#app')

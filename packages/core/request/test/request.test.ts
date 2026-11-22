@@ -16,7 +16,7 @@ function makeOptions(store: ReturnType<typeof makeStore>, overrides: Partial<Req
     return { baseURL: 'http://localhost', useStore: () => store, ...overrides }
 }
 
-describe('@airovo/request', () => {
+describe('@healseek/request', () => {
     it('keeps native FormData through Axios transforms while still serializing plain JSON objects', async () => {
         const instance = installRequest({ provide: vi.fn() } as any, makeOptions(makeStore()))
         const captured: any[] = []

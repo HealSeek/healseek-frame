@@ -5,7 +5,7 @@
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import { TagInput } from '@airovo/components/tag-input'
+import { TagInput } from '@healseek/components/tag-input'
 
 const tags = ref<string[]>([])
 </script>

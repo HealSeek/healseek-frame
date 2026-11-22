@@ -1,15 +1,15 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { defineComponent } from 'vue'
 import { useAuthStore } from '../src/index'
-import { useTabStore } from '@airovo/stores/tabs'
-import { getAppRouter, registerAppRouter } from '@airovo/router'
-import { resetAppRouterRegistration } from '@airovo/router/internal'
+import { useTabStore } from '@healseek/stores/tabs'
+import { getAppRouter, registerAppRouter } from '@healseek/router'
+import { resetAppRouterRegistration } from '@healseek/router/internal'
 import {
     getRequestClient,
     registerRequestSetup,
     registerSessionRestore,
-} from '@airovo/request'
-import { resetRequestRegistration } from '@airovo/request/internal'
+} from '@healseek/request'
+import { resetRequestRegistration } from '@healseek/request/internal'
 import { createApp } from '../src/createApp'
 import { useAppContext } from '../src/context'
 import { registerAppLocales, resetAppLocaleRegistration } from '../src/localeRegistry'

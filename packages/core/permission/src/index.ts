@@ -7,13 +7,13 @@
  *   - \`installPermission(app, { getAuth, onDenyRoute })\`
  *   - \`permissionFilter\` helper     — drop menu items the user can't see
  *
- * Depends on \`@airovo/stores\` for the auth surface and
- * \`@airovo/uikit-shadcnui\` for nothing (kept for symmetry; remove
+ * Depends on \`@healseek/stores\` for the auth surface and
+ * \`@healseek/uikit-shadcnui\` for nothing (kept for symmetry; remove
  * if a circular dep surfaces).
  */
 import { watchEffect, type App } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
-import type { FrameworkRouter } from '@airovo/router/internal'
+import type { FrameworkRouter } from '@healseek/router/internal'
 import { usePermissionStore, type AuthSurface } from './store'
 import { registerVPermission } from './directive'
 import { permissionFilter } from './menu-filter'

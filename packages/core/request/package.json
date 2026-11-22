@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/request",
+    "name": "@healseek/request",
     "version": "0.0.0",
     "type": "module",
     "main": "src/index.ts",
@@ -15,12 +15,12 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@airovo/stores": "workspace:*",
+        "@healseek/stores": "workspace:*",
         "axios": "catalog:",
         "vue": "catalog:"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@types/node": "catalog:",
         "@vueuse/core": "catalog:",
         "happy-dom": "catalog:",

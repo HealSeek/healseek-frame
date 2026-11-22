@@ -16,14 +16,14 @@ import {
   type Color,
 } from "reka-ui";
 import { computed, ref, shallowRef, useId, watch } from "vue";
-import { useOverlayOwner } from "@airovo/shared/overlay";
-import { cn } from "@airovo/uikit-shadcnui";
+import { useOverlayOwner } from "@healseek/shared/overlay";
+import { cn } from "@healseek/uikit-shadcnui";
 import {
   Popover,
   PopoverAnchor,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
 import Button from "../controls/Button.vue";
 import { NEW_API_INPUT_CLASS } from "../data-table/new-api-compat";
 import { normalizeColorPresets, normalizeHexColor } from "./color";

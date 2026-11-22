@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { Slider } from '@airovo/uikit-shadcnui'
+import { Slider } from '@healseek/uikit-shadcnui'
 
 describe('Slider public export', () => {
     it('renders track, range and one thumb by default', () => {

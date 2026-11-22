@@ -4,7 +4,7 @@ import {
     type DeepPartial,
     type Preferences,
     type PreferencesExtension,
-} from '@airovo/config/preferences'
+} from '@healseek/config/preferences'
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { useMediaQuery } from '@vueuse/core'

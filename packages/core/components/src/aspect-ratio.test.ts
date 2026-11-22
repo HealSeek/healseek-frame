@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { AspectRatio } from '@airovo/uikit-shadcnui'
+import { AspectRatio } from '@healseek/uikit-shadcnui'
 
 describe('AspectRatio public export', () => {
     it('renders a ratio wrapper with a slot and data-slot hook', () => {

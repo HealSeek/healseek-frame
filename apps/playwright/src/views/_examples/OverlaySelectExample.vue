@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useDrawer, useModal } from '@airovo/composables'
-import { Button } from '@airovo/uikit-shadcnui'
+import { useDrawer, useModal } from '@healseek/composables'
+import { Button } from '@healseek/uikit-shadcnui'
 import ExternalSelectForm from './ExternalSelectForm.vue'
 
 interface SelectionResult {

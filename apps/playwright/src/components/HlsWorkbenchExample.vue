@@ -10,7 +10,7 @@ import {
   type HlsManifestSource,
   type HlsRange,
   type HlsMarker,
-} from "@airovo/components";
+} from "@healseek/components";
 
 const url = ref("");
 const text = ref(

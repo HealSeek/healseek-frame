@@ -1,6 +1,6 @@
 import { nextTick, onBeforeUnmount, onMounted, type Ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useTabStore } from '@airovo/stores/tabs'
+import { useTabStore } from '@healseek/stores/tabs'
 
 /**
  * Keeps the layout content viewport position with its framework tab.

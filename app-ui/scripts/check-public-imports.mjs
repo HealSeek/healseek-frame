@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../src/", import.meta.url));
 const forbidden = [
-  /@airovo\/[^'"\s]+\/src\//,
+  /@healseek\/[^'"\s]+\/src\//,
   /packages\/core\//,
   // app-ui may use local siblings (`./components/...`) but must never escape
   // its own source tree with a parent import. Keep this check broad enough to

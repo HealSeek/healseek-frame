@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { StatusBadge, type StatusPreset } from '@airovo/components'
+import { StatusBadge, type StatusPreset } from '@healseek/components'
 
 export type ServiceHealth = 'healthy' | 'degraded' | 'offline'
 

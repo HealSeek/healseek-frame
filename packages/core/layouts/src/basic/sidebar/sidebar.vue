@@ -25,9 +25,9 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
     useSidebar,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
-import { Icon } from '@airovo/shared/icons'
+import { Icon } from '@healseek/shared/icons'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'

@@ -9,15 +9,15 @@ import {
   X,
 } from "@lucide/vue";
 import { computed, onBeforeUnmount, ref, useId, watch } from "vue";
-import { Icon, listIcons, localIconCollections } from "@airovo/shared/icons";
-import { useOverlayOwner } from "@airovo/shared/overlay";
+import { Icon, listIcons, localIconCollections } from "@healseek/shared/icons";
+import { useOverlayOwner } from "@healseek/shared/overlay";
 import {
   Popover,
   PopoverAnchor,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
-import { cn } from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
+import { cn } from "@healseek/uikit-shadcnui";
 import Button from "../controls/Button.vue";
 import Input from "../controls/Input.vue";
 import SelectBox from "../select/SelectBox.vue";

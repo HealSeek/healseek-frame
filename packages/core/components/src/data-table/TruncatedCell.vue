@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, useSlots } from 'vue'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@airovo/uikit-shadcnui'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@healseek/uikit-shadcnui'
 import { getTruncatedText } from './truncated-text-utils'
 
 defineOptions({ name: 'TruncatedCell' })

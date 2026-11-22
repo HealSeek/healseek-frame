@@ -1,6 +1,6 @@
 /**
  * useWebSocket — auto-reconnecting WebSocket composable with heartbeat
- * and message dispatch. Lives in @airovo/request so the realtime
+ * and message dispatch. Lives in @healseek/request so the realtime
  * primitives sit next to the HTTP client.
  */
 import { onBeforeUnmount, ref, shallowRef } from 'vue'

@@ -113,14 +113,14 @@ importers:
 
   app-ui:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../packages/core/components
       vue:
         specifier: 'catalog:'
         version: 3.5.35(typescript@6.0.3)
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../internal/typescript-config
       typescript:
@@ -129,49 +129,49 @@ importers:
 
   apps/airhaven:
     dependencies:
-      '@airovo/app':
+      '@healseek/app':
         specifier: workspace:*
         version: link:../../packages/core/app
-      '@airovo/app-ui':
+      '@healseek/app-ui':
         specifier: workspace:*
         version: link:../../app-ui
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../../packages/core/components
-      '@airovo/composables':
+      '@healseek/composables':
         specifier: workspace:*
         version: link:../../packages/core/composables
-      '@airovo/config':
+      '@healseek/config':
         specifier: workspace:*
         version: link:../../packages/core/config
-      '@airovo/forms':
+      '@healseek/forms':
         specifier: workspace:*
         version: link:../../packages/core/forms
-      '@airovo/layouts':
+      '@healseek/layouts':
         specifier: workspace:*
         version: link:../../packages/core/layouts
-      '@airovo/permission':
+      '@healseek/permission':
         specifier: workspace:*
         version: link:../../packages/core/permission
-      '@airovo/request':
+      '@healseek/request':
         specifier: workspace:*
         version: link:../../packages/core/request
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../../packages/core/router
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../packages/shared
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../../packages/core/stores
-      '@airovo/tabs':
+      '@healseek/tabs':
         specifier: workspace:*
         version: link:../../packages/core/tabs
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../packages/ui-kit/shadcn-vue
-      '@airovo/views':
+      '@healseek/views':
         specifier: workspace:*
         version: link:../../packages/core/views
       axios:
@@ -193,10 +193,10 @@ importers:
         specifier: 'catalog:'
         version: 3.25.76
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:^
         version: link:../../internal/typescript-config
-      '@airovo/vite-config':
+      '@healseek/vite-config':
         specifier: workspace:*
         version: link:../../internal/vite-config
       '@types/node':
@@ -236,7 +236,7 @@ importers:
         specifier: ^1.17.5
         version: 1.17.5(db0@0.3.4)(ioredis@5.11.1)
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../internal/typescript-config
       '@types/node':
@@ -251,49 +251,49 @@ importers:
 
   apps/playwright:
     dependencies:
-      '@airovo/app':
+      '@healseek/app':
         specifier: workspace:*
         version: link:../../packages/core/app
-      '@airovo/app-ui':
+      '@healseek/app-ui':
         specifier: workspace:*
         version: link:../../app-ui
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../../packages/core/components
-      '@airovo/composables':
+      '@healseek/composables':
         specifier: workspace:*
         version: link:../../packages/core/composables
-      '@airovo/config':
+      '@healseek/config':
         specifier: workspace:*
         version: link:../../packages/core/config
-      '@airovo/forms':
+      '@healseek/forms':
         specifier: workspace:*
         version: link:../../packages/core/forms
-      '@airovo/layouts':
+      '@healseek/layouts':
         specifier: workspace:*
         version: link:../../packages/core/layouts
-      '@airovo/permission':
+      '@healseek/permission':
         specifier: workspace:*
         version: link:../../packages/core/permission
-      '@airovo/request':
+      '@healseek/request':
         specifier: workspace:*
         version: link:../../packages/core/request
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../../packages/core/router
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../packages/shared
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../../packages/core/stores
-      '@airovo/tabs':
+      '@healseek/tabs':
         specifier: workspace:*
         version: link:../../packages/core/tabs
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../packages/ui-kit/shadcn-vue
-      '@airovo/views':
+      '@healseek/views':
         specifier: workspace:*
         version: link:../../packages/core/views
       axios:
@@ -315,10 +315,10 @@ importers:
         specifier: 'catalog:'
         version: 3.25.76
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:^
         version: link:../../internal/typescript-config
-      '@airovo/vite-config':
+      '@healseek/vite-config':
         specifier: workspace:*
         version: link:../../internal/vite-config
       '@types/node':
@@ -340,7 +340,7 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -398,7 +398,7 @@ importers:
         specifier: 'catalog:'
         version: 3.0.2(esbuild@0.28.2)(mockjs@1.1.0)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:^
         version: link:../typescript-config
       '@types/node':
@@ -416,34 +416,34 @@ importers:
 
   packages/core/app:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../components
-      '@airovo/config':
+      '@healseek/config':
         specifier: workspace:*
         version: link:../config
-      '@airovo/layouts':
+      '@healseek/layouts':
         specifier: workspace:*
         version: link:../layouts
-      '@airovo/permission':
+      '@healseek/permission':
         specifier: workspace:*
         version: link:../permission
-      '@airovo/request':
+      '@healseek/request':
         specifier: workspace:*
         version: link:../request
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../router
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../stores
-      '@airovo/tabs':
+      '@healseek/tabs':
         specifier: workspace:*
         version: link:../tabs
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       '@iconify/vue':
@@ -465,7 +465,7 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(esbuild@0.28.2)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.35(typescript@6.0.3)))(rolldown@1.0.2)(rollup@4.60.4)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))(vue@3.5.35(typescript@6.0.3))
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -483,10 +483,10 @@ importers:
 
   packages/core/components:
     dependencies:
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       '@codemirror/autocomplete':
@@ -559,7 +559,7 @@ importers:
         specifier: ^2.0.9
         version: 2.0.9
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -583,16 +583,16 @@ importers:
 
   packages/core/composables:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../components
-      '@airovo/forms':
+      '@healseek/forms':
         specifier: workspace:*
         version: link:../forms
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       reka-ui:
@@ -605,7 +605,7 @@ importers:
         specifier: ^2.0.9
         version: 2.0.9
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@vitejs/plugin-vue':
@@ -632,7 +632,7 @@ importers:
 
   packages/core/config:
     dependencies:
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../router
       pinia:
@@ -642,7 +642,7 @@ importers:
         specifier: 'catalog:'
         version: 3.5.35(typescript@6.0.3)
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       typescript:
@@ -651,10 +651,10 @@ importers:
 
   packages/core/forms:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../components
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       '@iconify/vue':
@@ -703,19 +703,19 @@ importers:
 
   packages/core/layouts:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../components
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../router
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../stores
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       nprogress:
@@ -755,13 +755,13 @@ importers:
 
   packages/core/permission:
     dependencies:
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../router
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../stores
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       pinia:
@@ -774,7 +774,7 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(esbuild@0.28.2)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.35(typescript@6.0.3)))(rolldown@1.0.2)(rollup@4.60.4)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))(vue@3.5.35(typescript@6.0.3))
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -792,7 +792,7 @@ importers:
 
   packages/core/request:
     dependencies:
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../stores
       axios:
@@ -802,7 +802,7 @@ importers:
         specifier: 'catalog:'
         version: 3.5.35(typescript@6.0.3)
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -830,7 +830,7 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(esbuild@0.28.2)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.35(typescript@6.0.3)))(rolldown@1.0.2)(rollup@4.60.4)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))(vue@3.5.35(typescript@6.0.3))
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -851,7 +851,7 @@ importers:
 
   packages/core/stores:
     dependencies:
-      '@airovo/config':
+      '@healseek/config':
         specifier: workspace:*
         version: link:../config
       '@vueuse/core':
@@ -894,22 +894,22 @@ importers:
 
   packages/core/tabs:
     dependencies:
-      '@airovo/components':
+      '@healseek/components':
         specifier: workspace:*
         version: link:../components
-      '@airovo/layouts':
+      '@healseek/layouts':
         specifier: workspace:*
         version: link:../layouts
-      '@airovo/router':
+      '@healseek/router':
         specifier: workspace:*
         version: link:../router
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
-      '@airovo/stores':
+      '@healseek/stores':
         specifier: workspace:*
         version: link:../stores
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       '@iconify/vue':
@@ -922,7 +922,7 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(esbuild@0.28.2)(pinia@3.0.4(typescript@6.0.3)(vue@3.5.35(typescript@6.0.3)))(rolldown@1.0.2)(rollup@4.60.4)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))(vue@3.5.35(typescript@6.0.3))
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
       '@types/node':
@@ -952,13 +952,13 @@ importers:
 
   packages/core/views:
     dependencies:
-      '@airovo/composables':
+      '@healseek/composables':
         specifier: workspace:*
         version: link:../composables
-      '@airovo/forms':
+      '@healseek/forms':
         specifier: workspace:*
         version: link:../forms
-      '@airovo/uikit-shadcnui':
+      '@healseek/uikit-shadcnui':
         specifier: workspace:*
         version: link:../../ui-kit/shadcn-vue
       '@iconify/vue':
@@ -990,10 +990,10 @@ importers:
         specifier: 'catalog:'
         version: 3.5.35(typescript@6.0.3)
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../internal/typescript-config
-      '@airovo/vite-config':
+      '@healseek/vite-config':
         specifier: workspace:*
         version: link:../../internal/vite-config
       '@lucide/vue':
@@ -1008,7 +1008,7 @@ importers:
 
   packages/ui-kit/shadcn-vue:
     dependencies:
-      '@airovo/shared':
+      '@healseek/shared':
         specifier: workspace:*
         version: link:../../shared
       '@iconify/vue':
@@ -1060,10 +1060,10 @@ importers:
         specifier: ^2.0.9
         version: 2.0.9
     devDependencies:
-      '@airovo/typescript-config':
+      '@healseek/typescript-config':
         specifier: workspace:*
         version: link:../../../internal/typescript-config
-      '@airovo/vite-config':
+      '@healseek/vite-config':
         specifier: workspace:*
         version: link:../../../internal/vite-config
       '@types/node':

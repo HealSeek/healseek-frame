@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@airovo/uikit-shadcnui'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@healseek/uikit-shadcnui'
 
 describe('Tabs public export', () => {
     it('renders tabs and links active trigger to its content', () => {

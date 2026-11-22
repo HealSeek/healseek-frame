@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { addAPIProvider } from "@airovo/shared/icons";
+import { addAPIProvider } from "@healseek/shared/icons";
 import { createIconifySource } from "./sources";
 
 function collection(

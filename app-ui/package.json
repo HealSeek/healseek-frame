@@ -1,5 +1,5 @@
 {
-  "name": "@airovo/app-ui",
+  "name": "@healseek/app-ui",
   "version": "0.0.0",
   "type": "module",
   "exports": {
@@ -12,11 +12,11 @@
     "test": "node ./scripts/check-public-contract.mjs"
   },
   "dependencies": {
-    "@airovo/components": "workspace:*",
+    "@healseek/components": "workspace:*",
     "vue": "catalog:"
   },
   "devDependencies": {
-    "@airovo/typescript-config": "workspace:*",
+    "@healseek/typescript-config": "workspace:*",
     "typescript": "catalog:"
   }
 }

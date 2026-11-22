@@ -1,4 +1,4 @@
-# @airovo/permission
+# @healseek/permission
 
 The framework installs RBAC during `createApp()`. It mirrors the auth session,
 filters menus, guards route metadata and registers `v-permission`.

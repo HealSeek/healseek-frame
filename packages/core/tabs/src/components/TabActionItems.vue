@@ -3,11 +3,11 @@ import { Icon } from "@iconify/vue";
 import {
   ContextMenuItem,
   ContextMenuSeparator,
-} from "@airovo/uikit-shadcnui/components/ui/context-menu";
+} from "@healseek/uikit-shadcnui/components/ui/context-menu";
 import {
   DropdownMenuItem,
   DropdownMenuSeparator,
-} from "@airovo/uikit-shadcnui/components/ui/dropdown-menu";
+} from "@healseek/uikit-shadcnui/components/ui/dropdown-menu";
 import type { TabAction } from "./tab-actions";
 
 defineProps<{ actions: TabAction[]; kind: "context" | "dropdown" }>();

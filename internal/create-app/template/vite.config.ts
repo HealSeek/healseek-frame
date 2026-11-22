@@ -1,5 +1,5 @@
 import { defineConfig, loadEnv } from 'vite'
-import { defineViteConfig } from '@airovo/vite-config'
+import { defineViteConfig } from '@healseek/vite-config'
 
 function envPort(value: string | undefined, fallback: number): number {
     const port = Number.parseInt(value ?? '', 10)

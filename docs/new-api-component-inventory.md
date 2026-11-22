@@ -1,4 +1,4 @@
-# new-api → airovo-frame 组件盘点
+# new-api → HealSeek Frame 组件盘点
 
 - 参考仓库：`QuantumNous/new-api`
 - 参考 revision：`a0bf6a8a412764bc296a8e27cf8c4aaa3f3f0ed9`
@@ -8,7 +8,7 @@
 
 ## 第一批重点盘点
 
-| new-api 源文件 | 组件名称 | airovo 落点 | 当前状态 | 缺口 | 优先级 | 验证方式 |
+| new-api 源文件 | 组件名称 | HealSeek Frame 落点 | 当前状态 | 缺口 | 优先级 | 验证方式 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `web/src/components/data-table/**`、`toolbar/view-mode-toggle.tsx`、`layout/card-grid.tsx`、`layout/mobile-card-list.tsx`、`layout/card-row-content.tsx`、`layout/card-cell-utils.ts` | DataTable core/layout/toolbar/hooks/view mode/card grid/mobile list | `packages/core/components/src/data-table` | 已存在但行为不完整 | 已补 ViewModeToggle、DataTableCardGrid、DataTableMobileCardList、DataTablePage 自动 mobile list fallback、共享 rows/columns/loading/error/selection/pagination/sort 契约、DataTableEmpty、new-api 键盘列宽分隔柄和 channels 风格 bordered table surface、框架 Select 分页页容量与 SectionPage footer 固定分页；仍需静态表格族、服务端 querySync 与完整跨浏览器矩阵 | P0 | 单测、demo、桌面/移动浏览器矩阵 |
 | `web/src/components/json-editor.tsx` | JsonEditor / JsonField | `packages/core/components/src/json-field/JsonField.vue` | 已存在但行为不完整 | 已对齐 new-api 可视化 `space-y-2`、标题/空态/行操作密度、模板 placeholder、对象/数组编辑、模板回填、number 非法值拒绝和 parse-error 保留；仍需更复杂类型推断和完整表单矩阵 | P0 | 单测、表单 demo、键盘/错误/回填浏览器验证 |
@@ -46,7 +46,7 @@ Issue #459 已补齐 DataPanel 自身的 `loading`/`empty`/`error` 状态契约�
 demo/template 和 API 文档；DataTableEmpty、DataTableCardGrid 与 ChartCard 继续
 作为独立后续 Issue。
 
-| new-api 源文件 | 组件名称 | airovo 落点 | 当前状态 | 缺口 | 优先级 | 验证方式 |
+| new-api 源文件 | 组件名称 | HealSeek Frame 落点 | 当前状态 | 缺口 | 优先级 | 验证方式 |
 | --- | --- | --- | --- | --- | --- | --- |
 | `web/src/components/truncated-text.tsx` | TruncatedText | `packages/core/components/src/data-table/TruncatedText.vue` | 已存在但行为不完整 | 已保留长文本抽取、tooltip、键盘焦点和空值语义；富内容 tooltip slot 与完整 DataTable 组合矩阵仍需持续对照 | P1 | 单测、DataTable demo、键盘/hover 验证 |
 | `web/src/components/data-table/core/truncated-cell.tsx` | TruncatedCell | `packages/core/components/src/data-table/TruncatedCell.vue` | 已存在但行为不完整 | 已增加 Vue `#tooltip` 富内容 slot，并保留 badge/VNode 文本抽取、列宽和 tooltip 内容；跨浏览器矩阵仍需持续对照 | P1 | 单测、DataTable 浏览器验证 |
@@ -88,11 +88,11 @@ demo/template 和 API 文档；DataTableEmpty、DataTableCardGrid 与 ChartCard 
 | 命令 | 结果 |
 | --- | --- |
 | `pnpm lint` | 通过；全仓 22 个 lint task 完成 |
-| `pnpm --filter @airovo/components test` | 通过；60 个测试文件、177 个测试 |
-| `pnpm --filter @airovo/forms test` | 通过；5 个测试文件、55 个测试 |
-| `pnpm --filter @airovo/layouts test` | 通过；6 个测试文件、15 个测试 |
-| `pnpm --filter @airovo/router test` | 通过；2 个测试文件、21 个测试 |
-| `pnpm --filter @airovo/stores test` | 通过；3 个测试文件、13 个测试 |
+| `pnpm --filter @healseek/components test` | 通过；60 个测试文件、177 个测试 |
+| `pnpm --filter @healseek/forms test` | 通过；5 个测试文件、55 个测试 |
+| `pnpm --filter @healseek/layouts test` | 通过；6 个测试文件、15 个测试 |
+| `pnpm --filter @healseek/router test` | 通过；2 个测试文件、21 个测试 |
+| `pnpm --filter @healseek/stores test` | 通过；3 个测试文件、13 个测试 |
 | `pnpm --filter playwright build` | 通过；保留既有 `@theme`、Rolldown annotation、chunk size 警告 |
 | `pnpm build` | 通过；playwright、mock-api、airhaven 本地构建均完成，未提交 airhaven 产物 |
 
@@ -138,8 +138,8 @@ DataTableViewModeToggle with table/card persistence.
 | Command | Result |
 | --- | --- |
 | `pnpm lint` | Passed; all 22 workspace lint tasks |
-| `pnpm --filter @airovo/components test` | Passed; 66 test files, 192 tests |
-| `pnpm --filter @airovo/layouts test` | Passed; 6 test files, 15 tests |
+| `pnpm --filter @healseek/components test` | Passed; 66 test files, 192 tests |
+| `pnpm --filter @healseek/layouts test` | Passed; 6 test files, 15 tests |
 | `pnpm --filter playwright exec vue-tsc --noEmit` | Passed |
 | `pnpm build` | Passed; existing LightningCSS `@theme`, Rolldown annotation, and chunk-size warnings remain |
 

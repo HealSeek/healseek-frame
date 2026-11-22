@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { ToggleGroup, ToggleGroupItem } from '@airovo/uikit-shadcnui'
+import { ToggleGroup, ToggleGroupItem } from '@healseek/uikit-shadcnui'
 
 describe('ToggleGroup public export', () => {
     it('renders the group and item through the root export', () => {

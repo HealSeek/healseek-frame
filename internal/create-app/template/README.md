@@ -1,6 +1,6 @@
 # __APP_NAME__
 
-This app is scaffolded with `@airovo/app`. It owns the business routes, API
+This app is scaffolded with `@healseek/app`. It owns the business routes, API
 modules, authentication handlers, and application-level components while the
 framework provides the shell, request client, session state, permissions,
 theme, and i18n services.

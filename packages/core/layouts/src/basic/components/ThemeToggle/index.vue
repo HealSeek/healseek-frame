@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Button } from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
+import { Button } from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
 import { computed } from 'vue'
-import { useThemeStore } from '@airovo/stores'
+import { useThemeStore } from '@healseek/stores'
 
 defineOptions({ name: 'ThemeToggle' })
 

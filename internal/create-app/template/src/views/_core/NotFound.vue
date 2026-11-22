@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NotFound as FrameworkNotFound } from '@airovo/views'
+import { NotFound as FrameworkNotFound } from '@healseek/views'
 
 defineOptions({ name: 'AppNotFound' })
 </script>

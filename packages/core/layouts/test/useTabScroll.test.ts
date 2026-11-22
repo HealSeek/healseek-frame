@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it } from 'vitest'
 import { createApp, defineComponent, h, nextTick, ref } from 'vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import { createPinia } from 'pinia'
-import { useTabStore } from '@airovo/stores/tabs'
+import { useTabStore } from '@healseek/stores/tabs'
 import { useTabScroll } from '../src/basic/useTabScroll'
 
 const mountedApps: Array<ReturnType<typeof createApp>> = []

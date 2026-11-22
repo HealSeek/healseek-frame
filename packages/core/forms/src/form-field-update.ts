@@ -1,7 +1,7 @@
 import {
     ApiMultiSelect, ApiSelect, ColorPicker, Combobox, DatePicker, DatePickerField, DateRangePicker,
     DateTimePicker, DateTimeRangePicker, IconPicker, ImageUpload, MultiSelect, SearchSelect, SelectBox, TagInput,
-} from '@airovo/components'
+} from '@healseek/components'
 import { toRaw } from 'vue'
 import type { FieldBindingObject } from 'vee-validate'
 import type { FormFieldSchema } from './types'

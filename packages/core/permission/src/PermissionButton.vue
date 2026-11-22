@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Button, type ButtonVariants } from '@airovo/uikit-shadcnui'
+import { Button, type ButtonVariants } from '@healseek/uikit-shadcnui'
 import { usePermissionStore } from './store'
 
 defineOptions({ name: 'PermissionButton', inheritAttrs: false })

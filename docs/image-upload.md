@@ -1,11 +1,11 @@
 # ImageUpload 图片上传
 
-从 `@airovo/components` 或 `@airovo/components/image-upload` 导入。组件负责单图上传、拖放、预览、替换、移除、进度、取消和失败重试；应用提供上传函数与持久化地址。
+从 `@healseek/components` 或 `@healseek/components/image-upload` 导入。组件负责单图上传、拖放、预览、替换、移除、进度、取消和失败重试；应用提供上传函数与持久化地址。
 
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { ImageUpload, type ImageUploadHandler } from "@airovo/components";
+import { ImageUpload, type ImageUploadHandler } from "@healseek/components";
 
 const image = ref("");
 const upload: ImageUploadHandler = async (file, { signal, onProgress }) => {

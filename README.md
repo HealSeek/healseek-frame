@@ -1,6 +1,6 @@
-# airovo-frame
+# HealSeek Frame
 
-[![GitHub](https://img.shields.io/badge/GitHub-Airsado%2Fairovo--frame-181717?logo=github)](https://github.com/Airsado/airovo-frame)
+[![GitHub](https://img.shields.io/badge/GitHub-HealSeek%20Frame-181717?logo=github)](https://github.com/Airsado/airovo-frame)
 [![Branch](https://img.shields.io/badge/branch-dev-orange)](https://github.com/Airsado/airovo-frame/tree/dev)
 [![Node](https://img.shields.io/badge/Node.js-20.19%2B-339933?logo=node.js)](https://nodejs.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-9.15.4-F69220?logo=pnpm)](https://pnpm.io/)
@@ -8,6 +8,17 @@
 一个面向 Vue 3 中后台应用的可复用框架工作区。项目把**框架能力**与**业务应用**分开：框架提供布局、主题、i18n、认证状态、权限、请求基础能力、路由守卫、tabs 和表单系统；应用负责页面、业务路由、API、认证流程和业务组件。
 
 当前代码位于 `dev` 分支，属于持续完善中的早期版本。它适合学习、二次开发和构建演示应用；在稳定 API 和正式版本发布前，请不要把它当作生产版本依赖。
+
+## 命名
+
+- 框架名称：**HealSeek Frame**；根工作区包名：`healseek-frame`（不发布）。
+- 框架与工具包统一使用 `@healseek/*`，例如 `@healseek/app`、`@healseek/forms`、`@healseek/vite-config`。
+- 脚手架包：`@healseek/create-app`，CLI 入口：`create-healseek`；仓库内仍使用 `pnpm create:app <name>`。
+- 应用名称和 `VITE_APP_NAMESPACE` 保持不变，避免更名后丢失已有登录状态和偏好设置；历史存储键继续兼容。
+
+执行 `pnpm test:branding` 检查工作区包名、内部依赖、源码引用和生产环境配置的一致性。
+
+GitHub 链接仍指向当前实际仓库。本地更名不包含 GitHub 仓库转移、远端更名或 npm 发布。
 
 ## 特性
 
@@ -80,8 +91,8 @@ pnpm build
 pnpm lint
 pnpm --filter playwright build
 pnpm --filter mock-api typecheck
-pnpm --filter @airovo/forms test
-pnpm --filter @airovo/app test
+pnpm --filter @healseek/forms test
+pnpm --filter @healseek/app test
 ```
 
 ## 创建业务应用
@@ -118,7 +129,7 @@ import './locales'
 
 import App from './App.vue'
 import preferences from './preferences'
-import { createApp } from '@airovo/app'
+import { createApp } from '@healseek/app'
 
 const { mount } = await createApp({
   root: App,
@@ -201,7 +212,7 @@ internal/
 - shadcn-vue 组件保持基础层定位；需要框架行为时在 `packages/core` 组合，不直接把业务逻辑写进基础组件。
 - 应用路由、页面、API、认证 handlers 和第三方 Provider 放在 `apps/<name>`。
 - 应用源代码使用 `#` 别名；`@` 保留给 shadcn-vue 内部路径。
-- 修改 `internal/vite-config/src/config.ts` 后，先运行 `pnpm --filter @airovo/vite-config build`。
+- 修改 `internal/vite-config/src/config.ts` 后，先运行 `pnpm --filter @healseek/vite-config build`。
 - 提交前至少执行与改动相关的 typecheck、lint、test 或 build。
 
 ## 项目状态

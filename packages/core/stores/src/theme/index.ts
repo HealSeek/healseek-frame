@@ -1,4 +1,4 @@
-import type { ThemeMode } from '@airovo/config/preferences'
+import type { ThemeMode } from '@healseek/config/preferences'
 
 import { defineStore } from 'pinia'
 import { computed } from 'vue'

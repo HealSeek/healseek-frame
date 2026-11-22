@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import { Icon } from '@airovo/shared/icons'
-import { DataPanel, FilterBar, MetricStrip, SectionPage, StatusBadge } from '@airovo/components'
-import { Button } from '@airovo/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { DataPanel, FilterBar, MetricStrip, SectionPage, StatusBadge } from '@healseek/components'
+import { Button } from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'DashboardOverview' })
 

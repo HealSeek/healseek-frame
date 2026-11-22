@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { Badge, Button } from '@airovo/uikit-shadcnui'
-import { SectionPage } from '@airovo/components'
-import { useToast } from '@airovo/composables'
-import { useRequest } from '@airovo/request'
-import { useAuthStore } from '@airovo/stores/auth'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { Badge, Button } from '@healseek/uikit-shadcnui'
+import { SectionPage } from '@healseek/components'
+import { useToast } from '@healseek/composables'
+import { useRequest } from '@healseek/request'
+import { useAuthStore } from '@healseek/stores/auth'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 import { createDemoApi } from '../api/demo'
 import { authRefreshDiagnostics, handleLogin, logout, refreshSession } from '../auth/handlers'
 

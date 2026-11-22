@@ -9,7 +9,7 @@ import {
   watch,
 } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +17,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
   Skeleton,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import Checkbox from "../checkbox/Checkbox.vue";
 import {
   normalizeDataTableColumnPinning,

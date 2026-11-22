@@ -89,7 +89,7 @@ if (process.argv.includes('--write')) {
     console.log(`Generated ${names.size} local Lucide icons.`)
 } else if (process.argv.includes('--check')) {
     if (readFileSync(output, 'utf8') !== collection) {
-        console.error('Local Lucide icon collection is stale. Run pnpm --filter @airovo/shared icons:generate.')
+        console.error('Local Lucide icon collection is stale. Run pnpm --filter @healseek/shared icons:generate.')
         process.exitCode = 1
     } else {
         console.log(`Verified ${names.size} local Lucide icons.`)

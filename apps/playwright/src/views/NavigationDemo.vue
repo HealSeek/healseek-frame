@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { Icon } from '@airovo/shared/icons'
-import { SectionPage } from '@airovo/components'
+import { Icon } from '@healseek/shared/icons'
+import { SectionPage } from '@healseek/components'
 import {
     Badge,
     Button,
     Collapsible,
     CollapsibleContent,
     CollapsibleTrigger,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'NavigationDemo' })
 const route = useRoute()

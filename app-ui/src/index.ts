@@ -1,8 +1,8 @@
 /**
  * Optional application-owned composition layer.
  *
- * Framework components are exported from `@airovo/components` and
- * `@airovo/uikit-shadcnui`; applications can add business-specific
+ * Framework components are exported from `@healseek/components` and
+ * `@healseek/uikit-shadcnui`; applications can add business-specific
  * components here without changing the framework packages.
  */
 export {

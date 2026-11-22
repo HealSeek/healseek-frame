@@ -1,5 +1,5 @@
-import { getRequestClient } from '@airovo/app'
-import type { AuthSession, AuthTokens } from '@airovo/stores/auth'
+import { getRequestClient } from '@healseek/app'
+import type { AuthSession, AuthTokens } from '@healseek/stores/auth'
 import type { LoginParams, RegisterParams } from '../../auth/contract'
 
 export async function login(params: LoginParams): Promise<AuthSession> {

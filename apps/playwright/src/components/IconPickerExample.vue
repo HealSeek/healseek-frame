@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { Button, IconPicker, createIconifySource } from "@airovo/components";
-import { useModal } from "@airovo/composables";
-import { useForm } from "@airovo/forms";
-import { registerIconCollection } from "@airovo/shared/icons";
+import { Button, IconPicker, createIconifySource } from "@healseek/components";
+import { useModal } from "@healseek/composables";
+import { useForm } from "@healseek/forms";
+import { registerIconCollection } from "@healseek/shared/icons";
 
 // These SVG bodies are trusted build-time assets. User-uploaded SVG needs its
 // own validation before registration; the picker does not sanitize SVG files.
 registerIconCollection(
   {
-    prefix: "airovo-demo",
+    prefix: "healseek-demo",
     width: 24,
     height: 24,
     icons: {
@@ -26,13 +26,13 @@ registerIconCollection(
 
 const localIcon = ref("lucide:home");
 const onlineIcon = ref("");
-const customIcon = ref("airovo-demo:planet");
+const customIcon = ref("healseek-demo:planet");
 const compactIcon = ref("lucide:settings");
 const onlineSources = [
   createIconifySource({ prefix: "mdi", label: "Material Design（在线）" }),
   createIconifySource({ prefix: "tabler", label: "Tabler（在线）" }),
 ];
-const customIcons = ["airovo-demo:planet", "airovo-demo:flag"];
+const customIcons = ["healseek-demo:planet", "healseek-demo:flag"];
 const submittedIcon = ref("尚未保存");
 
 // Using the string component name keeps schema-driven forms independent of

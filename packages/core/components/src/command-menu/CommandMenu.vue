@@ -14,7 +14,7 @@ import {
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 import type { CommandMenuGroup, CommandMenuItem, CommandMenuProps } from './types'
 
 defineOptions({ name: 'CommandMenu' })

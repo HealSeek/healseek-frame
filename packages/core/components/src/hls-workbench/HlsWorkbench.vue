@@ -8,12 +8,12 @@ import {
   Plus,
   Scissors,
 } from "@lucide/vue";
-import { useOverlayOwner } from "@airovo/shared/overlay";
+import { useOverlayOwner } from "@healseek/shared/overlay";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
 import { Button } from "../controls";
 import { SelectBox } from "../select";
 import { VideoPlayer } from "../video-player";

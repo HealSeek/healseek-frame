@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { onBeforeUnmount, ref } from 'vue'
-import { DatePicker, DateTimePicker } from '@airovo/components'
-import { useDrawer, useModal } from '@airovo/composables'
-import { Button } from '@airovo/uikit-shadcnui'
+import { DatePicker, DateTimePicker } from '@healseek/components'
+import { useDrawer, useModal } from '@healseek/composables'
+import { Button } from '@healseek/uikit-shadcnui'
 import ExternalDateForm from './ExternalDateForm.vue'
 
 const date = ref<Date>()

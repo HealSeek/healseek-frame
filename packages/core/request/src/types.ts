@@ -35,7 +35,7 @@ export interface RequestHooks {
 /**
  * The auth store shape that the request layer needs. This is the
  * minimum surface the request layer uses; it does NOT import the real
- * `@airovo/stores/auth` to avoid a runtime circular dependency.
+ * `@healseek/stores/auth` to avoid a runtime circular dependency.
  */
 export interface AuthStoreShape {
     /** Current access token (or null if signed out). */

@@ -2,11 +2,11 @@
 import { Check, ChevronsUpDown } from '@lucide/vue'
 import { computed, nextTick, ref, useId, watch, type PropType } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { cn, InputGroup, InputGroupAddon, InputGroupInput } from '@airovo/uikit-shadcnui'
-import { Command, CommandGroup, CommandItem, CommandList } from '@airovo/uikit-shadcnui/components/ui/command'
-import { Popover, PopoverAnchor, PopoverContent } from '@airovo/uikit-shadcnui/components/ui/popover'
-import { Icon } from '@airovo/shared/icons'
-import { useOverlayOwner } from '@airovo/shared/overlay'
+import { cn, InputGroup, InputGroupAddon, InputGroupInput } from '@healseek/uikit-shadcnui'
+import { Command, CommandGroup, CommandItem, CommandList } from '@healseek/uikit-shadcnui/components/ui/command'
+import { Popover, PopoverAnchor, PopoverContent } from '@healseek/uikit-shadcnui/components/ui/popover'
+import { Icon } from '@healseek/shared/icons'
+import { useOverlayOwner } from '@healseek/shared/overlay'
 import { flattenSelectOptions, selectableSelectOptions, type FlattenedSelectOption, type SelectOption } from './options'
 
 defineOptions({ name: 'Combobox' })

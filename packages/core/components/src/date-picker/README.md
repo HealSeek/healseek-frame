@@ -8,7 +8,7 @@ import { ref } from "vue";
 import {
   DateTimeRangePicker,
   type DateRangeValue,
-} from "@airovo/components/date-picker";
+} from "@healseek/components/date-picker";
 
 const range = ref<DateRangeValue>();
 const presets = [

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
 import type { PrimitiveProps } from "reka-ui";
-import { Button as UiButton, cn } from "@airovo/uikit-shadcnui";
-import { Icon } from "@airovo/shared/icons";
+import { Button as UiButton, cn } from "@healseek/uikit-shadcnui";
+import { Icon } from "@healseek/shared/icons";
 import {
   newApiButtonClass,
   type NewApiButtonSize,

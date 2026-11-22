@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { RadioGroup, RadioGroupItem } from '@airovo/uikit-shadcnui'
+import { RadioGroup, RadioGroupItem } from '@healseek/uikit-shadcnui'
 
 describe('RadioGroup public export', () => {
     it('renders the group through the public ui-kit entry', () => {

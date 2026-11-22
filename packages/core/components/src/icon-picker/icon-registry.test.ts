@@ -12,7 +12,7 @@ import {
   registerIconCollection,
   registerLocalIcons,
   type IconifyJSON,
-} from "@airovo/shared/icons";
+} from "@healseek/shared/icons";
 
 const body = '<path d="M1 1h10v10H1z"/>';
 
@@ -34,7 +34,7 @@ describe("shared Iconify resource registration", () => {
 
   it("preserves provider-qualified local names and resolves their SVG data", () => {
     const data: IconifyJSON = {
-      provider: "airovo-registry",
+      provider: "healseek-registry",
       prefix: "local-fixture",
       width: 16,
       height: 16,
@@ -43,17 +43,17 @@ describe("shared Iconify resource registration", () => {
     };
     expect(registerIconCollection(data, { title: "Local fixture" })).toBe(true);
     expect(localIconCollections.value).toContainEqual({
-      provider: "airovo-registry",
+      provider: "healseek-registry",
       prefix: "local-fixture",
       title: "Local fixture",
     });
-    expect(listIcons("airovo-registry", "local-fixture")).toEqual(
+    expect(listIcons("healseek-registry", "local-fixture")).toEqual(
       expect.arrayContaining([
-        "@airovo-registry:local-fixture:home",
-        "@airovo-registry:local-fixture:house",
+        "@healseek-registry:local-fixture:home",
+        "@healseek-registry:local-fixture:house",
       ]),
     );
-    expect(getIcon("@airovo-registry:local-fixture:house")).toMatchObject({
+    expect(getIcon("@healseek-registry:local-fixture:house")).toMatchObject({
       body,
       width: 16,
       height: 16,

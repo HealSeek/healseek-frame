@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { defineComponent, h } from "vue";
 import { useForm, type FormApi, type FormFieldSchema } from "./index";
 
-vi.mock("@airovo/shared/icons", () => ({ Icon: { render: () => null } }));
+vi.mock("@healseek/shared/icons", () => ({ Icon: { render: () => null } }));
 let wrapper: VueWrapper | undefined;
 afterEach(() => {
   wrapper?.unmount();

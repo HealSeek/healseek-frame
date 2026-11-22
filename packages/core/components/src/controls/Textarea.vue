@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { Textarea as UiTextarea, cn } from '@airovo/uikit-shadcnui'
+import { Textarea as UiTextarea, cn } from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'Textarea', inheritAttrs: false })
 const props = defineProps<{

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@airovo/shared/icons'
+import { Icon } from '@healseek/shared/icons'
 defineProps<{ title: string; showReset?: boolean }>()
 const emit = defineEmits<{ reset: [] }>()
 </script>

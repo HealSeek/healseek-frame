@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h, defineComponent } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { Kbd, KbdGroup } from '@airovo/uikit-shadcnui'
+import { Kbd, KbdGroup } from '@healseek/uikit-shadcnui'
 
 describe('Kbd public export', () => {
     it('renders keyboard hint and group through the root entry', () => {

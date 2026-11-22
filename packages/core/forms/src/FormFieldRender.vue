@@ -8,8 +8,8 @@ import {
     FieldLabel,
     FieldSet,
     FieldLegend,
-} from '@airovo/uikit-shadcnui'
-import { ApiMultiSelect, Button, ColorPicker, ImageUpload, Input, Textarea, DatePickerField, DateRangePicker, DateTimeRangePicker, MultiSelect, PasswordInput, SelectBox, IconPicker, TagInput } from '@airovo/components'
+} from '@healseek/uikit-shadcnui'
+import { ApiMultiSelect, Button, ColorPicker, ImageUpload, Input, Textarea, DatePickerField, DateRangePicker, DateTimeRangePicker, MultiSelect, PasswordInput, SelectBox, IconPicker, TagInput } from '@healseek/components'
 import { Field as VeeField, FieldArray as VeeFieldArray, type FieldBindingObject } from 'vee-validate'
 import { watchEffect } from 'vue'
 

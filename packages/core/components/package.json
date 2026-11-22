@@ -1,5 +1,5 @@
 {
-  "name": "@airovo/components",
+  "name": "@healseek/components",
   "version": "0.0.0",
   "type": "module",
   "exports": {
@@ -43,8 +43,8 @@
     "test": "vitest run --passWithNoTests --config vitest.config.ts"
   },
   "dependencies": {
-    "@airovo/shared": "workspace:*",
-    "@airovo/uikit-shadcnui": "workspace:*",
+    "@healseek/shared": "workspace:*",
+    "@healseek/uikit-shadcnui": "workspace:*",
     "@codemirror/autocomplete": "^6.20.3",
     "@codemirror/commands": "^6.11.1",
     "@codemirror/lang-javascript": "^6.2.5",
@@ -70,7 +70,7 @@
     "vue-sonner": "^2.0.9"
   },
   "devDependencies": {
-    "@airovo/typescript-config": "workspace:*",
+    "@healseek/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
     "@vue/test-utils": "^2.4.0",

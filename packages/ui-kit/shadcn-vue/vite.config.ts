@@ -1,4 +1,4 @@
-import { defineViteConfig } from '@airovo/vite-config';
+import { defineViteConfig } from '@healseek/vite-config';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url'
 

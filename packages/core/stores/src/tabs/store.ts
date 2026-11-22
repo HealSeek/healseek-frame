@@ -3,12 +3,12 @@
  *
  * The store holds the open tab list, the active tab id, the cached
  * tab ids (for keep-alive), and the maximized tab id. It does NOT
- * own the rendering — that's BasicTabBar's job (in @airovo/tabs).
+ * own the rendering — that's BasicTabBar's job (in @healseek/tabs).
  */
 import { defineStore } from 'pinia'
 import { computed, ref, nextTick } from 'vue'
 // Keep Pinia's `persist` option augmentation available when this subpath is
-// imported directly (`@airovo/stores/tabs`) without first traversing the
+// imported directly (`@healseek/stores/tabs`) without first traversing the
 // package root export that installs the persistence plugin.
 import type {} from 'pinia-plugin-persistedstate'
 import type {

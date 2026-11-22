@@ -2,12 +2,12 @@
 import { computed, ref } from 'vue'
 import { RouterView, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { FrameworkToaster } from '@airovo/components'
-import { BasicLayoutHost, BasicLoadingBar } from '@airovo/layouts'
-import { BasicTabBar } from '@airovo/tabs'
-import { useAuthStore } from '@airovo/stores/auth'
-import { usePreferencesStore } from '@airovo/stores/preferences'
-import { useTabStore } from '@airovo/stores/tabs'
+import { FrameworkToaster } from '@healseek/components'
+import { BasicLayoutHost, BasicLoadingBar } from '@healseek/layouts'
+import { BasicTabBar } from '@healseek/tabs'
+import { useAuthStore } from '@healseek/stores/auth'
+import { usePreferencesStore } from '@healseek/stores/preferences'
+import { useTabStore } from '@healseek/stores/tabs'
 import {
     Button,
     Dialog,
@@ -17,11 +17,11 @@ import {
     DialogHeader,
     DialogTitle,
     Input,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 import { useAppContext } from './context'
 import { useTabViewCache } from './useTabViewCache'
 import type { AppShellAuthHandlers } from './AppShell.types'
-import type { SidebarView } from '@airovo/layouts'
+import type { SidebarView } from '@healseek/layouts'
 
 defineOptions({ name: 'AppShell' })
 

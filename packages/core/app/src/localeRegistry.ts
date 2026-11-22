@@ -1,4 +1,4 @@
-import type { LocaleLoader } from '@airovo/layouts'
+import type { LocaleLoader } from '@healseek/layouts'
 
 export interface AppLocaleRegistration {
     modules: Record<string, LocaleLoader>

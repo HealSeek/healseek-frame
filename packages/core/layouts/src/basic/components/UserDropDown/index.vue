@@ -12,9 +12,9 @@ import {
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
-} from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
-import { useAuthStore } from '@airovo/stores/auth'
+} from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
+import { useAuthStore } from '@healseek/stores/auth'
 
 defineOptions({ name: 'UserDropDown' })
 

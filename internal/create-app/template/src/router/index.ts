@@ -1,5 +1,5 @@
-import { registerAppRouter } from '@airovo/app'
-import type { AppRouteLoaders } from '@airovo/router'
+import { registerAppRouter } from '@healseek/app'
+import type { AppRouteLoaders } from '@healseek/router'
 import { loadMenus, normalizeMenus } from '../api/core/menu'
 import { appEnv } from '../config/env'
 

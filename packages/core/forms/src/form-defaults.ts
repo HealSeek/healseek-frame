@@ -1,5 +1,5 @@
 import type { FormFieldContext, FormFieldSchema } from './types'
-import { ApiMultiSelect, ColorPicker, MultiSelect, TagInput } from '@airovo/components'
+import { ApiMultiSelect, ColorPicker, MultiSelect, TagInput } from '@healseek/components'
 import { toRaw } from 'vue'
 
 const DATE_COMPONENTS = new Set([

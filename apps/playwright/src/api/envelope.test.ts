@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { RequestError } from '@airovo/request'
+import { RequestError } from '@healseek/request'
 import { unwrapAppResponse } from './envelope'
 
 function response(data: unknown) {

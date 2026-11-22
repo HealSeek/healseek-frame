@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FrameworkNetworkError } from '@airovo/views'
+import { FrameworkNetworkError } from '@healseek/views'
 
 defineOptions({ name: 'AppNetworkError' })
 </script>

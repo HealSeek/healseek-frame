@@ -1,7 +1,7 @@
 <script setup lang="ts" generic="TData = Record<string, unknown>">
 import { computed, defineComponent, h, isVNode, type PropType, type VNodeChild } from 'vue'
-import { cn } from '@airovo/uikit-shadcnui'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@airovo/uikit-shadcnui'
+import { cn } from '@healseek/uikit-shadcnui'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@healseek/uikit-shadcnui'
 import TruncatedCell from './TruncatedCell.vue'
 import { getTruncatedText } from './truncated-text-utils'
 import { staticDataTableClassNames } from './static-data-table-classnames'

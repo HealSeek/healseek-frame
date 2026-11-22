@@ -20,7 +20,7 @@
  */
 import { z, ZodString, type ZodTypeAny } from 'zod'
 import type { FormFieldSchema } from './types'
-import { normalizeHexColor } from '@airovo/components'
+import { normalizeHexColor } from '@healseek/components'
 import { isArrayValueFieldComponent, isColorPickerFieldComponent } from './form-defaults'
 
 const RANGE_COMPONENTS = new Set(['DateRangePicker', 'daterange', 'DateTimeRangePicker', 'datetimerange'])

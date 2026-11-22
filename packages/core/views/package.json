@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/views",
+    "name": "@healseek/views",
     "version": "0.0.0",
     "type": "module",
     "exports": {
@@ -11,9 +11,9 @@
         "lint": "eslint \"**/*.ts\""
     },
     "dependencies": {
-        "@airovo/composables": "workspace:*",
-        "@airovo/forms": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/composables": "workspace:*",
+        "@healseek/forms": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "@iconify/vue": "catalog:",
         "zod": "catalog:",
         "vue": "catalog:",

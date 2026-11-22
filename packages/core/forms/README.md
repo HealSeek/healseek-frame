@@ -1,10 +1,10 @@
-# @airovo/forms
+# @healseek/forms
 
 `useForm` creates the form renderer and its controller in a Vue component setup:
 
 ```vue
 <script setup lang="ts">
-import { useForm } from '@airovo/forms'
+import { useForm } from '@healseek/forms'
 
 const [Form, formApi] = useForm({
   schema: [
@@ -32,7 +32,7 @@ Several `useForm`/`useAForm` calls can share one component setup, including form
 Every field value has the existing array shape: `{ name: [{ value: 'Ada' }] }`. Set `ArrayField` to change the row key and `array: true` to allow multiple rows. `initialValues` uses that same shape.
 
 Built-in `component: 'Password'` (and the lowercase `password` alias) maps to
-`@airovo/components` `PasswordInput`. It owns the `password`/`text` type toggle
+`@healseek/components` `PasswordInput`. It owns the `password`/`text` type toggle
 and forwards the schema's native attributes to the input. A schema `type` value
 is ignored by that component so callers cannot bypass the visibility state;
 use `toggleAriaLabel` to provide a localized accessible label. The same mapping
@@ -108,4 +108,4 @@ Validation errors appear below the corresponding field, without a form-level sum
 
 Generated control IDs are scoped to each mounted renderer with Vue `useId`; do not rely on the old `AForm-<field>` IDs in application selectors. Labels and array legends reference their own renderer's controls. `scrollToField('name[0].value')` accepts the rendered field path and searches only the controller's mounted forms. Closing a renderer unregisters its DOM while preserving controller values for reopening.
 
-Run `pnpm --filter @airovo/forms test` for controller and rendered-form tests, then typecheck the consuming app with `vue-tsc`.
+Run `pnpm --filter @healseek/forms test` for controller and rendered-form tests, then typecheck the consuming app with `vue-tsc`.

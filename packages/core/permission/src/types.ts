@@ -17,7 +17,7 @@
  *   }
  *
  * The `title` / `icon` / `hideInMenu` / `active` / `public` /
- * `ignoreLayout` fields already live in `@airovo/router`'s own
+ * `ignoreLayout` fields already live in `@healseek/router`'s own
  * RouteMeta declaration; we don't redefine them.
  */
 import 'vue-router'

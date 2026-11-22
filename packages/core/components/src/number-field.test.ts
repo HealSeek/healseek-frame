@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { h } from 'vue'
 import { describe, expect, it } from 'vitest'
-import { NumberField, NumberFieldInput } from '@airovo/uikit-shadcnui'
+import { NumberField, NumberFieldInput } from '@healseek/uikit-shadcnui'
 
 describe('NumberField public export', () => {
     it('renders the number field and input from the root entry', () => {

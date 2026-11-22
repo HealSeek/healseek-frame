@@ -9,15 +9,15 @@ import {
 } from "@internationalized/date";
 import { computed, getCurrentInstance, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { useOverlayOwner } from "@airovo/shared/overlay";
-import { cn } from "@airovo/uikit-shadcnui";
+import { useOverlayOwner } from "@healseek/shared/overlay";
+import { cn } from "@healseek/uikit-shadcnui";
 
-import { Calendar } from "@airovo/uikit-shadcnui/components/ui/calendar";
+import { Calendar } from "@healseek/uikit-shadcnui/components/ui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
 import { toDate } from "reka-ui/date";
 
 const props = defineProps<{

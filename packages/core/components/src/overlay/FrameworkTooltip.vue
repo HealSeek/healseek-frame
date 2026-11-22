@@ -4,7 +4,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 
 defineOptions({ name: "FrameworkTooltip" });
 

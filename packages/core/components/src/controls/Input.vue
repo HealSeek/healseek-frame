@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { Input as UiInput, cn } from '@airovo/uikit-shadcnui'
+import { Input as UiInput, cn } from '@healseek/uikit-shadcnui'
 import { NEW_API_INPUT_CLASS } from '../data-table/new-api-compat'
 
 defineOptions({ name: 'Input', inheritAttrs: false })

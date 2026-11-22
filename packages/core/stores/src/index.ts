@@ -15,4 +15,4 @@ export type {
     ThemeMode,
     ThemePreset,
     ThemeRadius,
-} from '@airovo/config/preferences'
+} from '@healseek/config/preferences'

@@ -16,7 +16,7 @@ function dynamicMenus(): MenuItem[] {
     }]
 }
 
-describe('@airovo/router dynamic routes', () => {
+describe('@healseek/router dynamic routes', () => {
     afterEach(() => {
         vi.useRealTimers()
     })

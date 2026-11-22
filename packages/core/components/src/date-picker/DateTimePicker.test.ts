@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
 import { describe, expect, it } from 'vitest'
-import { Input } from '@airovo/uikit-shadcnui'
+import { Input } from '@healseek/uikit-shadcnui'
 import DateTimePicker from './DateTimePicker.vue'
 
 const DatePickerStub = {

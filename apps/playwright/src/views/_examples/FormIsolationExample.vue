@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useForm } from '@airovo/forms'
-import { useModal } from '@airovo/composables'
-import { Button } from '@airovo/uikit-shadcnui'
+import { useForm } from '@healseek/forms'
+import { useModal } from '@healseek/composables'
+import { Button } from '@healseek/uikit-shadcnui'
 
 interface FirstValues {
     name: string

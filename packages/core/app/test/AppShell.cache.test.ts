@@ -14,13 +14,13 @@ import {
 import { createPinia, setActivePinia } from 'pinia'
 import { createI18n } from 'vue-i18n'
 import { createMemoryHistory, createRouter, onBeforeRouteLeave, useRoute } from 'vue-router'
-import { usePreferencesStore } from '@airovo/stores/preferences'
-import { useTabStore } from '@airovo/stores/tabs'
+import { usePreferencesStore } from '@healseek/stores/preferences'
+import { useTabStore } from '@healseek/stores/tabs'
 import { APP_CONTEXT_KEY } from '../src/context'
 import AppShell from '../src/AppShell.vue'
 
-vi.mock('@airovo/components', () => ({ FrameworkToaster: () => null }))
-vi.mock('@airovo/layouts', async () => {
+vi.mock('@healseek/components', () => ({ FrameworkToaster: () => null }))
+vi.mock('@healseek/layouts', async () => {
     const { defineComponent, h } = await import('vue')
     return {
         BasicLoadingBar: () => null,
@@ -29,8 +29,8 @@ vi.mock('@airovo/layouts', async () => {
         }),
     }
 })
-vi.mock('@airovo/tabs', () => ({ BasicTabBar: () => null }))
-vi.mock('@airovo/uikit-shadcnui', () => ({
+vi.mock('@healseek/tabs', () => ({ BasicTabBar: () => null }))
+vi.mock('@healseek/uikit-shadcnui', () => ({
     Button: () => null,
     Dialog: () => null,
     DialogContent: () => null,

@@ -1,4 +1,4 @@
-import type { MenuItem } from '@airovo/router'
+import type { MenuItem } from '@healseek/router'
 
 export interface SidebarViewParent {
     title: string

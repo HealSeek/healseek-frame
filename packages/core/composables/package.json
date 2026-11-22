@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/composables",
+    "name": "@healseek/composables",
     "version": "0.0.0",
     "type": "module",
     "exports": {
@@ -11,16 +11,16 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@airovo/components": "workspace:*",
-        "@airovo/forms": "workspace:*",
-        "@airovo/shared": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/components": "workspace:*",
+        "@healseek/forms": "workspace:*",
+        "@healseek/shared": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "reka-ui": "^2.9.8",
         "vue": "catalog:",
         "vue-sonner": "^2.0.9"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@vitejs/plugin-vue": "catalog:",
         "@vue/test-utils": "^2.4.0",
         "happy-dom": "^15.0.0",

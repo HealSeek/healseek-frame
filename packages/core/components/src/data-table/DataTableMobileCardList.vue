@@ -8,7 +8,7 @@ import {
   type Slot,
 } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import Checkbox from "../checkbox/Checkbox.vue";
 import type {
   DataTableColumn,

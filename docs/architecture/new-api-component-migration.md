@@ -1,6 +1,6 @@
-# new-api → airovo-frame 组件迁移盘点
+# new-api → HealSeek Frame 组件迁移盘点
 
-这份表是长期迁移的范围基线。new-api 只作为行为和交互参考，airovo-frame 使用 Vue 3、TypeScript、Reka UI 和 shadcn-vue 重新实现。`apps/airhaven` 只用于本地业务验证，不进入框架提交。
+这份表是长期迁移的范围基线。new-api 只作为行为和交互参考，HealSeek Frame 使用 Vue 3、TypeScript、Reka UI 和 shadcn-vue 重新实现。`apps/airhaven` 只用于本地业务验证，不进入框架提交。
 
 状态含义：
 
@@ -12,7 +12,7 @@
 
 ## 第一批组件族
 
-| new-api 源文件 | 组件名称 | airovo 落点 | 当前状态 | 主要缺口 | 优先级 | 验证方式 |
+| new-api 源文件 | 组件名称 | HealSeek Frame 落点 | 当前状态 | 主要缺口 | 优先级 | 验证方式 |
 |---|---|---|---|---|---|---|
 | `components/data-table/core/*`、`layout/*`、`toolbar/*`、`hooks/*` | DataTable 工程化族 | `packages/core/components/src/data-table/*` | 已存在但行为不完整 | querySync、storage migration、ViewOptions、sizing/pinning、ViewModeToggle、DataTableCardGrid、DataTablePage 自动 card fallback、桌面/卡片共享 rows/loading/error/selection/pagination、DataTableEmpty、键盘列宽分隔柄、new-api 分页 Select/按钮密度、SectionPage footer 固定分页已补；完整 querySync 与 desktop/mobile/主题/批量浏览器矩阵仍需继续核对 | P0 | router/component tests、demo、desktop/mobile browser |
 | `components/data-table/static/static-data-table.tsx`、`static-data-table-classnames.ts` | StaticDataTable / static class map | `packages/core/components/src/data-table/StaticDataTable.vue`、`static-data-table-classnames.ts` | 已存在且行为一致 | 已补本地数组/children 渲染、row key、row slot/renderRow、空行、TruncatedCell 和 class map；Firefox/Safari 视觉矩阵仍需长期核对 | P1 | component tests、demo/template、desktop/mobile browser |

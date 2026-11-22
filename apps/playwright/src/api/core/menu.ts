@@ -1,5 +1,5 @@
-import { getRequestClient } from '@airovo/app'
-import type { MenuItemInput } from '@airovo/router'
+import { getRequestClient } from '@healseek/app'
+import type { MenuItemInput } from '@healseek/router'
 
 export async function loadMenus(): Promise<unknown> {
     const response = await getRequestClient().get('/menus')

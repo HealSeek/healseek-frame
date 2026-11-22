@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, provide, ref, useId } from "vue";
-import { Button } from "@airovo/components";
+import { Button } from "@healseek/components";
 import {
   getFormContexts,
   FormContextKey,

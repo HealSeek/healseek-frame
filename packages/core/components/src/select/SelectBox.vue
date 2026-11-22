@@ -2,8 +2,8 @@
 import { X } from '@lucide/vue'
 import Button from '../controls/Button.vue'
 import { NEW_API_SELECT_ITEM_CLASS } from '../data-table/new-api-compat'
-import { useOverlayOwner } from '@airovo/shared/overlay'
-import { Icon } from '@airovo/shared/icons'
+import { useOverlayOwner } from '@healseek/shared/overlay'
+import { Icon } from '@healseek/shared/icons'
 import {
   Select,
   SelectContent,
@@ -12,7 +12,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from '@airovo/uikit-shadcnui/components/ui/select'
+} from '@healseek/uikit-shadcnui/components/ui/select'
 import { computed, ref, useAttrs, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { groupSelectOptions, type SelectOption } from './options'

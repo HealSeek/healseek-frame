@@ -12,15 +12,15 @@
  */
 import { computed, defineComponent, h, markRaw, ref, type PropType } from 'vue'
 import { z } from 'zod'
-import { useForm, type FormFieldSchema } from '@airovo/forms'
-import { CodeEditor, DatePickerField, JsonCodeEditor, JsonField } from '@airovo/components'
-import { SectionPage } from '@airovo/components'
-import { useModal } from '@airovo/composables'
+import { useForm, type FormFieldSchema } from '@healseek/forms'
+import { CodeEditor, DatePickerField, JsonCodeEditor, JsonField } from '@healseek/components'
+import { SectionPage } from '@healseek/components'
+import { useModal } from '@healseek/composables'
 import {
     Badge,
     Button,
-} from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
+} from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
 import FormIsolationExample from './_examples/FormIsolationExample.vue'
 
 defineOptions({ name: 'MyFormDemo' })

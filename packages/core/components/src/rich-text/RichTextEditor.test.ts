@@ -5,7 +5,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { defineComponent, h, nextTick, ref } from "vue";
 import RichTextEditor from "./RichTextEditor.vue";
 import { inspectRichTextHTML, isSafeRichTextURL } from "./rich-text-html";
-vi.mock('@airovo/shared/icons', () => ({ Icon: { render: () => null } }));
+vi.mock('@healseek/shared/icons', () => ({ Icon: { render: () => null } }));
 
 const wrappers: VueWrapper[] = [];
 function attach(props: Record<string, unknown> = {}) {

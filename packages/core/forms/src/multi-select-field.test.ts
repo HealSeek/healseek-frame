@@ -3,7 +3,7 @@ import { flushPromises, mount, type VueWrapper } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { defineComponent, h, markRaw, reactive } from 'vue'
 import { createI18n } from 'vue-i18n'
-import { ApiMultiSelect, MultiSelect } from '@airovo/components'
+import { ApiMultiSelect, MultiSelect } from '@healseek/components'
 import { useForm, type FormApi, type FormFieldSchema } from './index'
 import { isMultiSelectFieldComponent } from './form-defaults'
 

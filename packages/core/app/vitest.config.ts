@@ -9,11 +9,11 @@ export default defineConfig({
         alias: {
             '@': fileURLToPath(new URL('../../ui-kit/shadcn-vue/src', import.meta.url)),
             // Keep workspace source packages on one module id. Without these
-            // aliases Vitest can resolve `@airovo/stores` once through the
+            // aliases Vitest can resolve `@healseek/stores` once through the
             // app's importer and once through the root symlink, creating two
             // auth stores during multi-test bootstrap.
-            '@airovo/stores/auth': resolve(fileURLToPath(new URL('../stores', import.meta.url)), 'src/auth/index.ts'),
-            '@airovo/stores$': resolve(fileURLToPath(new URL('../stores', import.meta.url)), 'src/index.ts'),
+            '@healseek/stores/auth': resolve(fileURLToPath(new URL('../stores', import.meta.url)), 'src/auth/index.ts'),
+            '@healseek/stores$': resolve(fileURLToPath(new URL('../stores', import.meta.url)), 'src/index.ts'),
             // Resolve against this package's linked dependencies. The root
             // workspace intentionally does not expose Vue/Pinia as root
             // dependencies, so a ../../../node_modules alias breaks when

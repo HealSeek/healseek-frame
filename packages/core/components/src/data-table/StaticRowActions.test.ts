@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, vi } from 'vitest'
-import { DropdownMenu } from '@airovo/uikit-shadcnui'
+import { DropdownMenu } from '@healseek/uikit-shadcnui'
 import StaticRowActions from './StaticRowActions.vue'
 
 describe('StaticRowActions', () => {

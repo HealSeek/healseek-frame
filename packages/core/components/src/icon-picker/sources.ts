@@ -1,4 +1,4 @@
-import { getAPIConfig } from "@airovo/shared/icons";
+import { getAPIConfig } from "@healseek/shared/icons";
 import type { IconifySourceOptions, IconPickerSource } from "./types";
 
 const catalogs = new Map<string, { expires: number; icons: string[] }>();

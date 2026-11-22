@@ -15,7 +15,7 @@ import {
   type DataTableSort,
   type DataTableViewMode,
   type UseDataTableReturn,
-} from "@airovo/components";
+} from "@healseek/components";
 import DataTableQueryForm from "./DataTableQueryForm.vue";
 import type { FormFieldSchema } from "./types";
 import type { QueryFormNormalizer, QueryFormValues } from "./data-table-query";

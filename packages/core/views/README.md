@@ -1,6 +1,6 @@
 # Authentication views
 
-`Login` and `Register` are presentation components exported from `@airovo/views/auth`.
+`Login` and `Register` are presentation components exported from `@healseek/views/auth`.
 Applications own authentication, verification emails and account recovery APIs.
 
 `Register` keeps its original four fields by default. Optional registration fields
@@ -31,5 +31,5 @@ application must enforce its policy and validate verification tokens on its serv
 Run the auth view regressions through the existing form test toolchain:
 
 ```sh
-pnpm --filter @airovo/forms exec vitest run --config ../views/vitest.config.mts
+pnpm --filter @healseek/forms exec vitest run --config ../views/vitest.config.mts
 ```

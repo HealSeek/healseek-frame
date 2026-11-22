@@ -3,8 +3,8 @@ import { mount } from '@vue/test-utils'
 import { createI18n } from 'vue-i18n'
 import { describe, expect, it } from 'vitest'
 import ChartCard from './ChartCard.vue'
-import { ChartContainer, ChartLegend, ChartTooltip } from '@airovo/uikit-shadcnui'
-import { resolveChartColors } from '@airovo/uikit-shadcnui'
+import { ChartContainer, ChartLegend, ChartTooltip } from '@healseek/uikit-shadcnui'
+import { resolveChartColors } from '@healseek/uikit-shadcnui'
 
 const global = { plugins: [createI18n({ legacy: false, locale: 'zh-CN', messages: { 'zh-CN': { common: { chartLoading: '正在加载图表', chartError: '图表加载失败', chartEmpty: '暂无图表数据', retry: '重试' } } } })] }
 

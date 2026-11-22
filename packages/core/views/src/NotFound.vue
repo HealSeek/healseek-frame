@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from '@airovo/uikit-shadcnui'
+import { Button } from '@healseek/uikit-shadcnui'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()

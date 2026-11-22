@@ -10,7 +10,7 @@ import {
     PaginationLink,
     PaginationNext,
     PaginationPrevious,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 describe('Pagination public exports', () => {
     it('renders navigation, active page and previous/next semantics', () => {

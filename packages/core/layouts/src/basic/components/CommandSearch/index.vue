@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { Button } from '@airovo/uikit-shadcnui'
-import { CommandMenu, type CommandMenuItem } from '@airovo/components/command-menu'
-import { Icon } from '@airovo/shared/icons'
+import { Button } from '@healseek/uikit-shadcnui'
+import { CommandMenu, type CommandMenuItem } from '@healseek/components/command-menu'
+import { Icon } from '@healseek/shared/icons'
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'

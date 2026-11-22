@@ -1,14 +1,14 @@
-interface AirovoAppConfigRaw {
+interface HealSeekAppConfigRaw {
     VITE_GLOB_API_URL?: string
 }
 
-interface AirovoAppConfig {
+interface HealSeekAppConfig {
     apiURL: string
 }
 
 declare global {
     interface Window {
-        _AIROVO_APP_CONF_?: AirovoAppConfigRaw
+        _HEALSEEK_APP_CONF_?: HealSeekAppConfigRaw
     }
 }
 
@@ -25,9 +25,9 @@ function readBoolean(value: unknown, fallback: boolean): boolean {
 export function useAppConfig(
     env: Record<string, unknown> = import.meta.env,
     isProduction = import.meta.env.PROD,
-): AirovoAppConfig {
+): HealSeekAppConfig {
     const raw = isProduction
-        ? (globalThis.window?._AIROVO_APP_CONF_ ?? env)
+        ? (globalThis.window?._HEALSEEK_APP_CONF_ ?? env)
         : env
 
     return {

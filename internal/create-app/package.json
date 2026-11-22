@@ -1,10 +1,10 @@
 {
-    "name": "@airovo/create-app",
+    "name": "@healseek/create-app",
     "version": "0.0.0",
     "type": "module",
     "main": "src/index.ts",
     "bin": {
-        "create-app": "./dist/index.js"
+        "create-healseek": "./dist/index.js"
     },
     "exports": {
         ".": "./src/index.ts"
@@ -22,7 +22,7 @@
         "prompts": "^2.4.2"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@types/node": "catalog:",
         "tsup": "^8.0.0",
         "typescript": "~6.0.2"

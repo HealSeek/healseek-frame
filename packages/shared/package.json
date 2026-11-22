@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/shared",
+    "name": "@healseek/shared",
     "version": "0.0.0",
     "exports": {
         "./utils": "./src/utils/index.ts",
@@ -13,8 +13,8 @@
         "icons:check": "node scripts/generate-lucide-icons.mjs --check"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
-        "@airovo/vite-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
+        "@healseek/vite-config": "workspace:*",
         "@lucide/vue": "^1.17.0",
         "@vue/tsconfig": "^0.9.1",
         "typescript": "~6.0.2"

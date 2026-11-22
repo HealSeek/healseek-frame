@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it } from 'vitest'
 import { nextTick } from 'vue'
-import { DropdownMenu } from '@airovo/uikit-shadcnui'
+import { DropdownMenu } from '@healseek/uikit-shadcnui'
 import { createI18n } from 'vue-i18n'
 import DataTableViewOptions from './DataTableViewOptions.vue'
 

@@ -1,4 +1,4 @@
-# @airovo/components
+# @healseek/components
 
 Framework-level UI compositions live here; the shadcn-vue primitives remain
 unchanged in `packages/ui-kit/shadcn-vue`.
@@ -7,8 +7,8 @@ unchanged in `packages/ui-kit/shadcn-vue`.
 
 `HlsWorkbench` composes the framework `VideoPlayer` with a playlist resolver,
 seek timeline, two segment-snapping range handles, original-fragment inspector
-and a 50-row paginated fragment list. Import from `@airovo/components` or
-`@airovo/components/hls-workbench`. It has no application endpoint, persistence,
+and a 50-row paginated fragment list. Import from `@healseek/components` or
+`@healseek/components/hls-workbench`. It has no application endpoint, persistence,
 rule scope or business-specific authorization behavior.
 
 ```vue
@@ -96,14 +96,14 @@ audio/subtitle renditions remain unsupported by this editing timeline. See
 ## CodeEditor
 
 `CodeEditor` is a generic CodeMirror 6 editor. Import it from
-`@airovo/components/code-editor` (or `@airovo/components`). The engine and language
+`@healseek/components/code-editor` (or `@healseek/components`). The engine and language
 parsers load asynchronously when the component mounts; no CDN, worker service,
 application API, or code execution is involved.
 
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { CodeEditor } from "@airovo/components/code-editor";
+import { CodeEditor } from "@healseek/components/code-editor";
 
 const source = ref('export const message = "Hello";');
 </script>
@@ -147,7 +147,7 @@ submission, reset and disabling remain controlled by `useForm`:
 
 ```ts
 import { markRaw } from "vue";
-import { CodeEditor } from "@airovo/components/code-editor";
+import { CodeEditor } from "@healseek/components/code-editor";
 
 const schema = [
   {
@@ -164,8 +164,8 @@ const schema = [
 ## VideoPlayer
 
 `VideoPlayer` wraps Artplayer 5.4.0 and Hls.js 1.7.3 without any application API,
-authorization header or playback reporting. Import it from `@airovo/components`
-or the smaller `@airovo/components/video-player` entry. The player and HLS decoder
+authorization header or playback reporting. Import it from `@healseek/components`
+or the smaller `@healseek/components/video-player` entry. The player and HLS decoder
 are dynamically imported only when an active player has a non-empty source.
 
 ```vue
@@ -175,7 +175,7 @@ import {
   type VideoPlayerMetadata,
   type VideoPlayerOptions,
   type VideoPlayerSubtitle,
-} from "@airovo/components/video-player";
+} from "@healseek/components/video-player";
 
 const options: VideoPlayerOptions = {
   muted: false,
@@ -262,8 +262,8 @@ use the props to change the source so decoder cleanup remains deterministic.
 
 ## Button, Input and Textarea
 
-Import the public control compositions from `@airovo/components` or the smaller
-`@airovo/components/controls` entry. They compose the unchanged ui-kit primitives
+Import the public control compositions from `@healseek/components` or the smaller
+`@healseek/components/controls` entry. They compose the unchanged ui-kit primitives
 and apply the new-api control sizes, focus/invalid rings, dark theme and disabled
 states. Native attributes, listeners and input models are forwarded unchanged.
 Button defaults to `type="button"`; use an explicit `type="submit"` for a form
@@ -924,7 +924,7 @@ envelopes. Import `ApiSelectLoader` for a typed adapter:
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { ApiSelect, type ApiSelectLoader } from "@airovo/components";
+import { ApiSelect, type ApiSelectLoader } from "@healseek/components";
 
 const providerId = ref<string>();
 const loadProviders: ApiSelectLoader = async ({ signal }) => {
@@ -1206,7 +1206,7 @@ It does not use the browser's native color dialog or modify ui-kit source.
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { ColorPicker } from "@airovo/components/color-picker";
+import { ColorPicker } from "@healseek/components/color-picker";
 const theme = ref("#c2410c");
 </script>
 
@@ -1247,16 +1247,16 @@ alpha, disabled, readonly, form reset and modal examples.
 
 `IconPicker` selects an Iconify name such as `lucide:home`. It provides a preview,
 search, paginated icon grid, clear action, keyboard navigation and input/icon
-triggers. Import it from `@airovo/components` or
-`@airovo/components/icon-picker`; import icon rendering and registration from
-`@airovo/shared/icons`. Iconify is a runtime dependency of the shared package,
+triggers. Import it from `@healseek/components` or
+`@healseek/components/icon-picker`; import icon rendering and registration from
+`@healseek/shared/icons`. Iconify is a runtime dependency of the shared package,
 so applications do not need to install another copy of `@iconify/vue`.
 
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { IconPicker } from "@airovo/components";
-import { Icon } from "@airovo/shared/icons";
+import { IconPicker } from "@healseek/components";
+import { Icon } from "@healseek/shared/icons";
 
 const icon = ref("lucide:home");
 </script>
@@ -1285,7 +1285,7 @@ file. The `body` is SVG markup without the enclosing `svg` element; width and
 height describe its viewBox. Registration does not sanitize untrusted uploads.
 
 ```ts
-import { registerIconCollection } from "@airovo/shared/icons";
+import { registerIconCollection } from "@healseek/shared/icons";
 import appIcons from "./assets/app-icons.json";
 
 registerIconCollection(appIcons, { title: "应用图标" });
@@ -1301,8 +1301,8 @@ application's authenticated business client and do not receive its access token.
 The source must permit browser cross-origin requests.
 
 ```ts
-import { createIconifySource, type IconPickerSource } from "@airovo/components";
-import { addAPIProvider } from "@airovo/shared/icons";
+import { createIconifySource, type IconPickerSource } from "@healseek/components";
+import { addAPIProvider } from "@healseek/shared/icons";
 
 const publicSources = [
   createIconifySource({ prefix: "mdi", label: "Material Design" }),

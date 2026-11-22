@@ -2,7 +2,7 @@
 import { flushPromises, mount, type VueWrapper } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { defineComponent, h, markRaw } from 'vue'
-import { ColorPicker } from '@airovo/components'
+import { ColorPicker } from '@healseek/components'
 import { useForm, type FormApi, type FormFieldSchema } from './index'
 
 let wrapper: VueWrapper | undefined

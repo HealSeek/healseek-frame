@@ -6,8 +6,8 @@ import {
   DropdownMenuItem,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@airovo/uikit-shadcnui";
-import { Icon } from "@airovo/shared/icons";
+} from "@healseek/uikit-shadcnui";
+import { Icon } from "@healseek/shared/icons";
 import {
   NEW_API_DROPDOWN_CONTENT_CLASS,
   NEW_API_DROPDOWN_ITEM_CLASS,

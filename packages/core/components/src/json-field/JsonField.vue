@@ -2,7 +2,7 @@
 import { Button, Input } from "../controls";
 import { computed, ref, useAttrs, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 
 import {
   formatJson,

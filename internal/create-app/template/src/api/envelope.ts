@@ -1,4 +1,4 @@
-import { getResponseEnvelopeDetails, RequestError, type ResponseEnvelopeOptions } from '@airovo/request'
+import { getResponseEnvelopeDetails, RequestError, type ResponseEnvelopeOptions } from '@healseek/request'
 import type { AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 
 /** The demo backend's protocol stays in the application layer. */

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onBeforeUnmount, ref } from "vue";
-import { ImageUpload, type ImageUploadHandler } from "@airovo/components";
-import { useForm } from "@airovo/forms";
+import { ImageUpload, type ImageUploadHandler } from "@healseek/components";
+import { useForm } from "@healseek/forms";
 
 const image = ref("");
 const previews = new Set<string>();

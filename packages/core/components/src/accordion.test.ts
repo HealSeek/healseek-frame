@@ -8,7 +8,7 @@ import {
     AccordionHeader,
     AccordionItem,
     AccordionTrigger,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 function accordionHost(props: Record<string, unknown> = {}) {
     return defineComponent({

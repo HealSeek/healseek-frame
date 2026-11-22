@@ -5,7 +5,7 @@
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import { ApiMultiSelect, type ApiMultiSelectLoader } from "@airovo/components";
+import { ApiMultiSelect, type ApiMultiSelectLoader } from "@healseek/components";
 
 const values = ref<string[]>([]);
 const loadOptions: ApiMultiSelectLoader = async ({ signal }) => {
@@ -31,7 +31,7 @@ const loadOptions: ApiMultiSelectLoader = async ({ signal }) => {
 </template>
 ```
 
-公共出口为 `@airovo/components` 和 `@airovo/components/select`。`ApiMultiSelectContext`、`ApiMultiSelectLoader`、`ApiMultiSelectPage` 是单选 API loader 类型的别名。
+公共出口为 `@healseek/components` 和 `@healseek/components/select`。`ApiMultiSelectContext`、`ApiMultiSelectLoader`、`ApiMultiSelectPage` 是单选 API loader 类型的别名。
 
 - `modelValue`：受控的 `string[]`；未知的已选值依旧显示和保留，不擅自清空。
 - `api({ search, page, signal })`：返回 `SelectOption[]` 或 `{ options, hasMore, hint? }`。`description` 显示为选项提示，`icon`、`disabled` 保留，空值选项不会成为可选标签。
@@ -47,7 +47,7 @@ const loadOptions: ApiMultiSelectLoader = async ({ signal }) => {
 ## 接入框架表单
 
 ```ts
-import { useForm } from "@airovo/forms";
+import { useForm } from "@healseek/forms";
 
 const [Form, formApi] = useForm({
   schema: [{

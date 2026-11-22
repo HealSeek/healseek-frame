@@ -6,6 +6,7 @@ import { deepMerge } from './merge'
 import { frameworkDefaultPreferences } from './defaults'
 
 const STORAGE_PREFIX = 'framework-preferences'
+// Keep the pre-rename key so existing users retain their saved preferences.
 const LEGACY_STORAGE_PREFIX = 'airovo-preferences'
 const STORAGE_VERSION = 2
 type CustomPreferencesRecord = Record<string, unknown>

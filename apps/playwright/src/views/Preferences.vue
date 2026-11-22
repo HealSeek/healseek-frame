@@ -5,10 +5,10 @@
  * which triggers `manager.applyTheme()` and persists to localStorage.
  */
 import { computed } from 'vue'
-import { Label, Input, NativeSelect } from '@airovo/uikit-shadcnui'
-import { usePreferencesStore } from '@airovo/stores/preferences'
-import { Icon } from '@airovo/shared/icons'
-import { SectionPage } from '@airovo/components'
+import { Label, Input, NativeSelect } from '@healseek/uikit-shadcnui'
+import { usePreferencesStore } from '@healseek/stores/preferences'
+import { Icon } from '@healseek/shared/icons'
+import { SectionPage } from '@healseek/components'
 
 defineOptions({ name: 'Preferences' })
 

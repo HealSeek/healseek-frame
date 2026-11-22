@@ -1,4 +1,4 @@
-import { getRequestErrorDetails } from '@airovo/request'
+import { getRequestErrorDetails } from '@healseek/request'
 
 export type AuthOperation = 'login' | 'register' | 'refresh' | 'me' | 'logout'
 

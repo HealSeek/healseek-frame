@@ -19,15 +19,15 @@ import {
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import {
   Popover,
   PopoverAnchor,
   PopoverContent,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
-import { cn } from "@airovo/uikit-shadcnui";
-import { Icon } from "@airovo/shared/icons";
-import { useOverlayOwner } from "@airovo/shared/overlay";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
+import { cn } from "@healseek/uikit-shadcnui";
+import { Icon } from "@healseek/shared/icons";
+import { useOverlayOwner } from "@healseek/shared/overlay";
 
 export interface MultiSelectOption {
   label: string;

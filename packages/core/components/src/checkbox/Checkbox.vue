@@ -4,7 +4,7 @@ import type { HTMLAttributes } from 'vue'
 import { Check, Minus } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { CheckboxIndicator, CheckboxRoot, useForwardPropsEmits } from 'reka-ui'
-import { cn } from '@airovo/uikit-shadcnui'
+import { cn } from '@healseek/uikit-shadcnui'
 
 defineOptions({ name: 'Checkbox' })
 

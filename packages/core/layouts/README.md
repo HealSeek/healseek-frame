@@ -1,17 +1,17 @@
-# @airovo/layouts
+# @healseek/layouts
 
 框架层的布局壳、导航和布局级插槽。
 
-本包负责 `BasicLayout`、`BasicHeader`、`BasicSidebar` 和设置/i18n；面向业务页面的通用框架组件从 `@airovo/components` 导入：
+本包负责 `BasicLayout`、`BasicHeader`、`BasicSidebar` 和设置/i18n；面向业务页面的通用框架组件从 `@healseek/components` 导入：
 
-布局系统参考 new-api 的后台工作区模式独立重写，框架负责壳层、导航和视觉偏好，业务包只提供菜单与页面内容。内置 `LayoutSettings` 设置抽屉，可切换侧栏布局、侧栏样式、内容宽度、主题和密度；偏好由 `@airovo/config` / `@airovo/stores` 持久化。
+布局系统参考 new-api 的后台工作区模式独立重写，框架负责壳层、导航和视觉偏好，业务包只提供菜单与页面内容。内置 `LayoutSettings` 设置抽屉，可切换侧栏布局、侧栏样式、内容宽度、主题和密度；偏好由 `@healseek/config` / `@healseek/stores` 持久化。
 
-应用的 Tailwind CSS 入口应依次引入 `@airovo/uikit-shadcnui/style.css` 与
-`@airovo/layouts/style.css`（脚手架已配置）。后者注册框架语义色工具类并加载主题；
+应用的 Tailwind CSS 入口应依次引入 `@healseek/uikit-shadcnui/style.css` 与
+`@healseek/layouts/style.css`（脚手架已配置）。后者注册框架语义色工具类并加载主题；
 布局组件自动加载的 `theme.css` 只含标准 CSS，不携带需 Tailwind 编译的指令。
 
 - `LayoutSettings`：统一调整布局和外观偏好的设置抽屉。
-- `CommandSearch`：Header 内置的菜单搜索，复用 `@airovo/components/command-menu`。
+- `CommandSearch`：Header 内置的菜单搜索，复用 `@healseek/components/command-menu`。
   点击或使用 `Ctrl+K`（macOS 为 `⌘K`）打开，输入后可用方向键和 Enter 导航，
   Escape 关闭并恢复焦点。搜索仅索引应用传入的可见菜单，按侧栏分组和顺序展示，
   支持一级菜单、多层子菜单名称及路径；禁用菜单不可跳转，外链在新标签页打开。
@@ -20,7 +20,7 @@
 `LayoutSettings` 的抽屉标题、说明、打开按钮和恢复默认按钮使用全局
 `common.layoutSettings*` locale keys；显式 title/description props 仍优先。
 
-这些组件属于框架内置能力，业务包只负责提供领域语义组件。布局包不再承载通用组件，也不再 re-export `@airovo/components`；应用应直接从 `@airovo/components` 导入页面、数据和交互封装。
+这些组件属于框架内置能力，业务包只负责提供领域语义组件。布局包不再承载通用组件，也不再 re-export `@healseek/components`；应用应直接从 `@healseek/components` 导入页面、数据和交互封装。
 
 ```vue
 <BasicLayoutHost :menus="menus">
@@ -33,7 +33,7 @@ views. A matching view replaces the root menu, renders a back affordance, and
 keeps the same grouping, ordering, active-state and collapsed-dropdown rules:
 
 ```ts
-import type { SidebarView } from "@airovo/layouts";
+import type { SidebarView } from "@healseek/layouts";
 
 const sidebarViews: SidebarView[] = [
   {

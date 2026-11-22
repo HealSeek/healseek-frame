@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/app",
+    "name": "@healseek/app",
     "version": "0.0.0",
     "type": "module",
     "exports": {
@@ -11,16 +11,16 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@airovo/config": "workspace:*",
-        "@airovo/components": "workspace:*",
-        "@airovo/layouts": "workspace:*",
-        "@airovo/permission": "workspace:*",
-        "@airovo/request": "workspace:*",
-        "@airovo/router": "workspace:*",
-        "@airovo/shared": "workspace:*",
-        "@airovo/stores": "workspace:*",
-        "@airovo/tabs": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/config": "workspace:*",
+        "@healseek/components": "workspace:*",
+        "@healseek/layouts": "workspace:*",
+        "@healseek/permission": "workspace:*",
+        "@healseek/request": "workspace:*",
+        "@healseek/router": "workspace:*",
+        "@healseek/shared": "workspace:*",
+        "@healseek/stores": "workspace:*",
+        "@healseek/tabs": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "@iconify/vue": "catalog:",
         "nprogress": "catalog:",
         "pinia": "catalog:",
@@ -29,7 +29,7 @@
         "vue-router": "catalog:"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@types/node": "catalog:",
         "@vitejs/plugin-vue": "catalog:",
         "happy-dom": "catalog:",

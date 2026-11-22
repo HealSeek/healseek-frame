@@ -11,7 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import { normalizeDataTableColumnVisibility } from "./column-visibility";
 import type { DataTableColumn, DataTableColumnVisibility } from "./types";
 import {

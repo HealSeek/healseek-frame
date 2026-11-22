@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue'
-import { useForm } from '@airovo/forms'
+import { useForm } from '@healseek/forms'
 
 const props = withDefaults(defineProps<{
     label?: string

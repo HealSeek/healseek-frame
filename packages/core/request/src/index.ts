@@ -33,7 +33,7 @@ export {
 } from './registry'
 
 // Realtime composables — exported from the main barrel so apps can
-// `import { useWebSocket, useEventSource } from '@airovo/request'`
+// `import { useWebSocket, useEventSource } from '@healseek/request'`
 // without reaching into deep paths.
 export { useWebSocket, type UseWebSocketOptions, type WebSocketState } from './useWebSocket'
 export {

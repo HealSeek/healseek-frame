@@ -3,7 +3,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@airovo/uikit-shadcnui/components/ui/popover";
+} from "@healseek/uikit-shadcnui/components/ui/popover";
 
 defineOptions({ name: "FrameworkPopover" });
 

@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/layouts",
+    "name": "@healseek/layouts",
     "version": "0.0.0",
     "exports": {
         ".": "./src/index.ts",
@@ -15,11 +15,11 @@
         "test": "vitest run --config vitest.config.ts"
     },
     "dependencies": {
-        "@airovo/components": "workspace:*",
-        "@airovo/router": "workspace:*",
-        "@airovo/shared": "workspace:*",
-        "@airovo/stores": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/components": "workspace:*",
+        "@healseek/router": "workspace:*",
+        "@healseek/shared": "workspace:*",
+        "@healseek/stores": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "nprogress": "catalog:",
         "vue": "catalog:",
         "vue-i18n": "catalog:",

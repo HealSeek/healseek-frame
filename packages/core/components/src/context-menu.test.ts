@@ -10,7 +10,7 @@ import {
     ContextMenuShortcut,
     ContextMenuSubContent,
     ContextMenuSubTrigger,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 
 describe('ContextMenu advanced primitives', () => {
     it('forwards checkbox state, inset styling and indicator slots', () => {

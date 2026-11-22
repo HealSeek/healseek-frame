@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Button } from '../controls'
-import { Icon } from "@airovo/shared/icons";
+import { Icon } from "@healseek/shared/icons";
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import {
@@ -10,7 +10,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@airovo/uikit-shadcnui";
+} from "@healseek/uikit-shadcnui";
 import { STATE_CONTENT_CLASS, STATE_SURFACE_CLASS } from "./state-surface";
 
 defineOptions({ name: "ErrorState" });

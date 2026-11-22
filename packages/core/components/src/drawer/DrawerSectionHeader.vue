@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { Icon } from '@airovo/shared/icons'
+import { Icon } from '@healseek/shared/icons'
 
 defineOptions({ name: 'DrawerSectionHeader' })
 

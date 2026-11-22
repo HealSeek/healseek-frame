@@ -1,5 +1,5 @@
 {
-  "name": "@airovo/tabs",
+  "name": "@healseek/tabs",
   "version": "0.0.0",
   "type": "module",
   "main": "src/index.ts",
@@ -13,12 +13,12 @@
     "test": "vitest run --config vitest.config.ts"
   },
   "dependencies": {
-    "@airovo/components": "workspace:*",
-    "@airovo/layouts": "workspace:*",
-    "@airovo/router": "workspace:*",
-    "@airovo/shared": "workspace:*",
-    "@airovo/stores": "workspace:*",
-    "@airovo/uikit-shadcnui": "workspace:*",
+    "@healseek/components": "workspace:*",
+    "@healseek/layouts": "workspace:*",
+    "@healseek/router": "workspace:*",
+    "@healseek/shared": "workspace:*",
+    "@healseek/stores": "workspace:*",
+    "@healseek/uikit-shadcnui": "workspace:*",
     "@iconify/vue": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "catalog:",
     "@vue/test-utils": "^2.4.0",
-    "@airovo/typescript-config": "workspace:*",
+    "@healseek/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "happy-dom": "catalog:",
     "pinia": "catalog:",

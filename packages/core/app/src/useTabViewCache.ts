@@ -8,7 +8,7 @@ import {
     type ComponentPublicInstance,
     type VNode,
 } from 'vue'
-import type { TabItem } from '@airovo/stores/tabs'
+import type { TabItem } from '@healseek/stores/tabs'
 import type { RouteRecordNormalized } from 'vue-router'
 
 interface TabCacheSource {
@@ -55,7 +55,7 @@ export function useTabViewCache(tabs: TabCacheSource, route: ViewRoute) {
         const existing = views.get(key)
         if (existing) return existing
 
-        const name = `AirovoTabView${serial++}`
+        const name = `HealSeekTabView${serial++}`
         const view: CachedView = { fullPath, name, component: {}, routeRecord }
         const component = defineComponent({
             name,

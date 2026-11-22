@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { cn } from "@airovo/uikit-shadcnui";
+import { cn } from "@healseek/uikit-shadcnui";
 import DrawerBody from "./DrawerBody.vue";
 import DrawerContent from "./DrawerContent.vue";
 import DrawerDescription from "./DrawerDescription.vue";

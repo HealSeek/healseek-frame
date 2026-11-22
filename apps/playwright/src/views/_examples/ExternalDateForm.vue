@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, markRaw } from 'vue'
-import { DatePicker, DateTimePicker } from '@airovo/components'
-import { useForm } from '@airovo/forms'
+import { DatePicker, DateTimePicker } from '@healseek/components'
+import { useForm } from '@healseek/forms'
 
 defineProps<{ testPrefix: string }>()
 

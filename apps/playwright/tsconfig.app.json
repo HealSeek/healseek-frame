@@ -1,5 +1,5 @@
 {
-  "extends": "@airovo/typescript-config/base.json",
+  "extends": "@healseek/typescript-config/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "erasableSyntaxOnly": true,

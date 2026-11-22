@@ -11,8 +11,8 @@ import {
     SheetTitle,
     SheetTrigger,
     useSidebar,
-} from '@airovo/uikit-shadcnui'
-import { Icon } from '@airovo/shared/icons'
+} from '@healseek/uikit-shadcnui'
+import { Icon } from '@healseek/shared/icons'
 import {
     usePreferencesStore,
     type ContentLayout,
@@ -23,7 +23,7 @@ import {
     type ThemePreset,
     type ThemeRadius,
     type ThemeMode,
-} from '@airovo/stores'
+} from '@healseek/stores'
 import PreviewIcon from './PreviewIcon.vue'
 import PreviewCard from './PreviewCard.vue'
 import SectionTitle from './SectionTitle.vue'

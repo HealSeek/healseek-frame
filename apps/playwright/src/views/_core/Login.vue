@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { Login as FrameworkLogin } from '@airovo/views'
+import { Login as FrameworkLogin } from '@healseek/views'
 import { handleLogin } from '../../auth/handlers'
 import type { LoginParams } from '../../auth/contract'
-import { usePreferencesStore } from '@airovo/stores/preferences'
+import { usePreferencesStore } from '@healseek/stores/preferences'
 
 defineOptions({ name: 'AppLogin' })
 

@@ -1,7 +1,7 @@
 import { flushPromises, mount, type VueWrapper } from "@vue/test-utils";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import ImageUpload from "./ImageUpload.vue";
-vi.mock("@airovo/shared/icons", () => ({ Icon: { render: () => null } }));
+vi.mock("@healseek/shared/icons", () => ({ Icon: { render: () => null } }));
 
 const wrappers: VueWrapper[] = [];
 function render(props: InstanceType<typeof ImageUpload>["$props"]) {

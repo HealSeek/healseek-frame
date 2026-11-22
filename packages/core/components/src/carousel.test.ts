@@ -2,7 +2,7 @@
 import { h, nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, vi } from 'vitest'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@airovo/uikit-shadcnui'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@healseek/uikit-shadcnui'
 
 describe('Carousel public exports', () => {
     it('renders region and slide semantics with previous/next controls', () => {

@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/permission",
+    "name": "@healseek/permission",
     "version": "0.0.0",
     "type": "module",
     "main": "src/index.ts",
@@ -12,15 +12,15 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@airovo/router": "workspace:*",
-        "@airovo/stores": "workspace:*",
-        "@airovo/uikit-shadcnui": "workspace:*",
+        "@healseek/router": "workspace:*",
+        "@healseek/stores": "workspace:*",
+        "@healseek/uikit-shadcnui": "workspace:*",
         "pinia": "catalog:",
         "vue": "catalog:",
         "vue-router": "catalog:"
     },
     "devDependencies": {
-        "@airovo/typescript-config": "workspace:*",
+        "@healseek/typescript-config": "workspace:*",
         "@types/node": "catalog:",
         "happy-dom": "catalog:",
         "typescript": "catalog:",

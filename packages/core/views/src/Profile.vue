@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { useToast } from '@airovo/composables'
+import { useToast } from '@healseek/composables'
 import {
     Button,
     Input,
     Field,
     FieldLabel,
     FieldDescription,
-} from '@airovo/uikit-shadcnui'
+} from '@healseek/uikit-shadcnui'
 import { Icon } from '@iconify/vue'
 
 defineOptions({ name: 'FrameworkProfile' })

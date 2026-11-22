@@ -1,5 +1,5 @@
 {
-    "name": "@airovo/stores",
+    "name": "@healseek/stores",
     "version": "0.0.0",
     "exports": {
         ".": "./src/index.ts",
@@ -25,7 +25,7 @@
         "vitest": "^2.1.0"
     },
     "dependencies": {
-        "@airovo/config": "workspace:*",
+        "@healseek/config": "workspace:*",
         "@vueuse/core": "catalog:",
         "pinia": "catalog:",
         "pinia-plugin-persistedstate": "catalog:",

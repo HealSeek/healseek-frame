@@ -1,12 +1,12 @@
-# @airovo/request
+# @healseek/request
 
-`@airovo/request` owns the single Axios instance created by `createApp()`. The
+`@healseek/request` owns the single Axios instance created by `createApp()`. The
 application registers its transport policy before startup and receives the
 client from `getRequestClient()` in its API modules.
 
 ```ts
 // src/api/request.ts
-import { registerRequestSetup } from '@airovo/app'
+import { registerRequestSetup } from '@healseek/app'
 import { appConfig } from '../config/env'
 
 registerRequestSetup({
@@ -34,7 +34,7 @@ flight refresh and refresh-failure navigation. `registerSessionRestore()` is
 used for the hard-refresh flow. API modules call `getRequestClient()` and do
 not create another Axios instance.
 
-`@airovo/request` does not assume a universal business success code. Apps can
+`@healseek/request` does not assume a universal business success code. Apps can
 use `getResponseEnvelopeDetails()` with their own `successCodes`, data keys and
 message aliases. The parser supports nested Nitro `data` wrappers and the
 common `message`/`msg` aliases; the Playwright demo keeps its `code: '0'`
