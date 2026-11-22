@@ -1,6 +1,20 @@
 # 视觉验收记录
 
-> 下方区分历史记录与本轮 `5174` 已实测项目。Browser 插件不可用，本轮使用临时 Chrome CDP fallback；`5174` 子进程曾重启，恢复后 `/src/main.ts` 返回 200。未列入“已实测”的目标清单，不使用历史截图推断为已完成。
+> 各记录只证明对应日期、版本与范围内的实际观察。README 预览截图与历史交互验收分开记录，不使用历史截图推断当前版本已通过完整验收。
+
+## README 预览截图（2026-11-22）
+
+- 源码版本：`4f2fdba`，HealSeek Frame 品牌与 `@healseek/*` 包名更名提交；未包含本地未提交的认证逻辑改动。
+- 运行方式：`pnpm dev:demo`，使用公开 Demo 与独立 Nitro Mock API。默认前端端口 `5174` 已占用，本次实例实际使用 `http://localhost:5175`；未停止原有服务。
+- 视口：1280 × 720，桌面浏览器；使用本地 Mock 演示账号，不使用私有业务应用或真实业务数据。
+- 已观察并保存：概览页浅色与深色切换、表单系统页面顶部的 JsonField 编辑区、媒体组件页的本地图标选择器展开状态；页面标题显示 `HealSeek Frame Demo`。
+- 截图：[浅色工作台](assets/readme/overview-light.jpg)、[深色工作台](assets/readme/overview-dark.jpg)、[表单系统](assets/readme/form-system.jpg)、[媒体与图标组件](assets/readme/components.jpg)。
+- 验证限制：本轮是 README 静态展示取景，不代表全部组件交互、移动端、主题持久化、权限与认证流程已完成浏览器回归。
+- 额外观察（未定位）：一次站内切换至数据展示子页后正文为空；浏览器日志另有两条 `CommandSearch.onShortcut` 读取 `undefined.toLowerCase` 的异常。未将这些情况报告为通过，也未在本轮品牌与文档工作中修改实现，需另行独立复现。
+
+## 2026-09-28 历史验收环境
+
+以下 `5174` 记录使用临时 Chrome CDP fallback；当时 `5174` 子进程曾重启，恢复后 `/src/main.ts` 返回 200。未列入当日“已实测”的目标清单，不使用历史截图推断为已完成。
 
 ## 本轮 5174 验收（已实测部分，2026-09-28）
 
