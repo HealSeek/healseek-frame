@@ -77,9 +77,16 @@ tabs/KeepAlive 协作由框架完成。
 ## 认证与请求边界
 
 框架 auth store 只保存 session/token 状态：`setSession`、`setTokens`、`setUser`、
-`clearSession`、`markSessionExpired`、`clearSessionExpired`、
+`clearSession`、`synchronizeSession`、`markSessionExpired`、`clearSessionExpired`、
 `completeReauthentication`。登录、注册、刷新、用户信息、登出和重认证函数由应用的
 `src/auth/handlers.ts` 实现，并调用应用 `src/api/core/*`。
+
+`createApp()` 使用 `preferences.app.name` 隔离认证存储。每次登录或重认证调用
+`setSession()` 都会建立新的 `sessionId`；刷新调用 `setTokens()` 保留身份。
+异步刷新前先执行 `synchronizeSession()` 并记录 `sessionId` 和 refresh token，
+响应返回时再次核对它们，再调用 `setTokens(tokens, expectedSessionId)`；返回 `false`
+表示会话已失效，应丢弃结果。恢复用户信息、失败清理和异步登出也必须核对原会话，
+不能将旧请求的结果写入新登录。Demo 和脚手架的 handlers 提供了完整接入示例。
 
 框架 request 层只负责：
 

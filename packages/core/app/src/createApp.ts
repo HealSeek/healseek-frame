@@ -4,7 +4,7 @@ import {
 } from '@healseek/router'
 import { createAppRouter, getAppRouterRegistration, setActiveAppRouter, type FrameworkRouterOptions } from '@healseek/router/internal'
 import { createLayoutsI18n, loadLocalesMapFromDir } from '@healseek/layouts'
-import { useAuthStore, useI18nStore } from '@healseek/stores'
+import { setAuthStorageNamespace, useAuthStore, useI18nStore } from '@healseek/stores'
 import { piniaPersist } from '@healseek/stores/persist'
 import { createPinia, setActivePinia } from 'pinia'
 import type { Locale } from '@healseek/stores/i18n'
@@ -78,6 +78,7 @@ export async function createApp(options: FrameworkAppOptions): Promise<Framework
     activeRuntime = null
     registerLocalIcons()
     const defaults = resolvePreferences(options.preferences)
+    setAuthStorageNamespace(defaults.app.name)
     const routerRegistration = getAppRouterRegistration()
     const requestRegistration = getRequestRegistration()
     const localeRegistration = getAppLocaleRegistration()

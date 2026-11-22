@@ -53,6 +53,7 @@ function installAppInterceptors(client: AxiosInstance): void {
     const retry401 = createAuthRetryHandler({
         getSession: () => {
             const auth = useAuthStore()
+            auth.synchronizeSession()
             return { accessToken: auth.accessToken, refreshToken: auth.refreshToken }
         },
         refresh: refreshSession,

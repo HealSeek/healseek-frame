@@ -78,31 +78,55 @@ export async function handleRegister(values: RegisterParams): Promise<void> {
 
 export async function restoreSession(): Promise<void> {
     const auth = useAuthStore()
-    if (!auth.refreshToken) return
+    if (!auth.synchronizeSession() || !auth.refreshToken) return
+    const sessionId = auth.sessionId
+    let expectedRefreshToken = auth.refreshToken
     try {
-        const tokens = await refresh(auth.refreshToken)
-        auth.setTokens(tokens)
-        auth.setUser(await getCurrentUser())
+        const tokens = await refresh(expectedRefreshToken)
+        if (!isCurrentSession(auth, sessionId) || auth.refreshToken !== expectedRefreshToken
+            || !auth.setTokens(tokens, sessionId)) return
+        expectedRefreshToken = auth.refreshToken
+        const user = await getCurrentUser()
+        if (isCurrentSession(auth, sessionId)) auth.setUser(user)
     } catch {
+        // Restore failures belong to the request's session, not a later login
+        // or a refresh token another tab has already rotated successfully.
+        if (!isCurrentSession(auth, sessionId) || auth.refreshToken !== expectedRefreshToken) return
         auth.clearSession()
         auth.clearSessionExpired()
     }
 }
 
+function isCurrentSession(auth: ReturnType<typeof useAuthStore>, sessionId: string | null): boolean {
+    return auth.sessionId === sessionId && auth.synchronizeSession()
+}
+
 export async function refreshSession(expectedRefreshToken: string): Promise<string | null> {
-    authRefreshDiagnostics.attempts += 1
-    const tokens = await refresh(expectedRefreshToken)
     const auth = useAuthStore()
-    if (auth.refreshToken !== expectedRefreshToken) return null
-    auth.setTokens(tokens)
-    authRefreshDiagnostics.successes += 1
-    return tokens.accessToken
+    if (!auth.synchronizeSession() || auth.refreshToken !== expectedRefreshToken) return null
+    const sessionId = auth.sessionId
+    authRefreshDiagnostics.attempts += 1
+    try {
+        const tokens = await refresh(expectedRefreshToken)
+        if (!isCurrentSession(auth, sessionId) || auth.refreshToken !== expectedRefreshToken
+            || !auth.setTokens(tokens, sessionId)) return null
+        authRefreshDiagnostics.successes += 1
+        return tokens.accessToken
+    } catch (error) {
+        // Do not let the 401 retry policy expire a replacement session when
+        // an earlier refresh fails (even if the server reused its token).
+        if (!isCurrentSession(auth, sessionId) || auth.refreshToken !== expectedRefreshToken) return null
+        throw error
+    }
 }
 
 export async function logout(options: { navigate?: boolean } = {}): Promise<void> {
     const auth = useAuthStore()
+    if (!auth.synchronizeSession()) return
+    const sessionId = auth.sessionId
     const tokens = { accessToken: auth.accessToken, refreshToken: auth.refreshToken }
     try { await revoke(tokens) } catch { /* Local logout still completes when revocation is unavailable. */ }
+    if (!isCurrentSession(auth, sessionId)) return
     auth.clearSession()
     auth.clearSessionExpired()
     if (options.navigate !== false) await getAppRouter().replace('/login')
